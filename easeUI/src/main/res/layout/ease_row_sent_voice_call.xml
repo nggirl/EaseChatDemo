@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:paddingTop="13dp" >
+    android:paddingTop="13dp">
 
     <TextView
         android:id="@+id/timestamp"
@@ -15,7 +15,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_chat_activity" >
+        android:layout_marginTop="@dimen/margin_chat_activity">
 
         <ImageView
             android:id="@+id/iv_userhead"
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/margin_chat_activity"
             android:layout_toLeftOf="@id/iv_userhead"
-            android:background="@drawable/ease_chatto_bg" >
+            android:background="@drawable/ease_chatto_bg">
 
             <ImageView
                 android:layout_marginLeft="4dp"
@@ -52,8 +52,7 @@
                 android:layout_toRightOf="@id/iv_call_icon"
                 android:background="@null"
                 android:minHeight="40dp"
-                android:padding="6dp"
-              />
+                android:padding="6dp" />
         </RelativeLayout>
 
         <ImageView

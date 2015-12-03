@@ -3,11 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/imageview"
@@ -16,8 +16,7 @@
             android:focusable="false"
             android:layout_centerHorizontal="true"
             android:padding="2dp"
-            android:src="@drawable/em_conversation_normal" >
-        </ImageView>
+            android:src="@drawable/em_conversation_normal"></ImageView>
 
         <TextView
             android:visibility="invisible"
@@ -40,7 +39,6 @@
         android:text="@string/session"
         android:paddingBottom="2dp"
         android:textColor="@color/em_main_botton_text_color"
-        android:textSize="12sp" >
-    </TextView>
+        android:textSize="12sp"></TextView>
 
 </LinearLayout>

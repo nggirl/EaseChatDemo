@@ -9,8 +9,6 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.easemob.easeui.test"
-                     android:handleProfiling="false"
-                     android:functionalTest="false"
-                     android:label="Tests for com.easemob.easeui.test"/>
+        android:targetPackage="com.easemob.easeui.test" android:handleProfiling="false"
+        android:functionalTest="false" android:label="Tests for com.easemob.easeui.test" />
 </manifest>

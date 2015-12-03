@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/values-zh-rCN/ease_strings.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="Add_a_button_was_clicked">添加按钮被点击</string>
     <string name="Add_a_friend">加个好友呗</string>
     <string name="Add_group_members_fail">添加群成员失败:</string>

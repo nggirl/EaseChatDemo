@@ -5,26 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <!-- <com.easemob.easeui.widget.EaseChatPrimaryMenu
         android:id="@+id/primary_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" /> -->
-    
-    <FrameLayout 
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/primary_menu_container"
-        >
-    </FrameLayout>
+        android:id="@+id/primary_menu_container"></FrameLayout>
 
     <FrameLayout
         android:id="@+id/extend_menu_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#fff"
-        android:visibility="gone" >
+        android:visibility="gone">
 
         <com.easemob.easeui.widget.EaseChatExtendMenu
             android:id="@+id/extend_menu"
@@ -34,11 +32,10 @@
             android:layout_marginTop="9dp"
             easemob:numColumns="4" />
 
-        <FrameLayout 
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/emojicon_menu_container"
-            ></FrameLayout>
+            android:id="@+id/emojicon_menu_container"></FrameLayout>
     </FrameLayout>
 
 </LinearLayout><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/layout/ease_widget_chat_input_menu.xml -->

@@ -30,5 +30,4 @@
 
     <item android:drawable="@android:color/transparent" />
 
-</selector>
-<!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/drawable/em_photogrid_list_selector.xml -->
+</selector><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/drawable/em_photogrid_list_selector.xml -->

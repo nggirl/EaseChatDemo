@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="23.0.1"><source path="/Users/Logan/development/android/as_workspace/EaseChatDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/assets"/></dataSet><dataSet config="unspecified"><source path="/Users/Logan/development/android/as_workspace/EaseChatDemo/app/build/intermediates/exploded-aar/EaseChatDemo/easeUI/unspecified/assets"/></dataSet><dataSet config="main"><source path="/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/assets"/></dataSet><dataSet config="debug"><source path="/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/debug/assets"/></dataSet></merger>
+<merger version="3">
+    <dataSet config="23.0.1">
+        <source
+            path="/Users/Logan/development/android/as_workspace/EaseChatDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/assets" />
+    </dataSet>
+    <dataSet config="unspecified">
+        <source
+            path="/Users/Logan/development/android/as_workspace/EaseChatDemo/app/build/intermediates/exploded-aar/EaseChatDemo/easeUI/unspecified/assets" />
+    </dataSet>
+    <dataSet config="main">
+        <source
+            path="/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/assets" />
+    </dataSet>
+    <dataSet config="debug">
+        <source
+            path="/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/debug/assets" />
+    </dataSet>
+</merger>

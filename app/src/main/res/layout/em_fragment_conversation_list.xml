@@ -6,12 +6,11 @@
     android:background="@color/common_bg"
     android:orientation="vertical">
 
-	<com.easemob.easeui.widget.EaseTitleBar 
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    easemob:titleBarTitle="@string/session"
-	    />
-    
+    <com.easemob.easeui.widget.EaseTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        easemob:titleBarTitle="@string/session" />
+
     <include layout="@layout/ease_search_bar" />
 
     <include
@@ -26,7 +25,6 @@
         android:background="@android:color/transparent"
         android:cacheColorHint="#00000000"
         android:divider="@null"
-        easemob:cvsListPrimaryTextSize="16sp"
-         />
+        easemob:cvsListPrimaryTextSize="16sp" />
 
 </LinearLayout>

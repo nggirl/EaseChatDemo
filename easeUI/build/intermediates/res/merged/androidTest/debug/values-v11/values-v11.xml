@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/build/intermediates/bundles/debug/res/values-v11/values-v11.xml -->
-    <eat-comment/>
+    <eat-comment />
     <style name="Anim_style2" parent="android:style/Theme.Holo.Light.NoActionBar">
         <item name="android:windowAnimationStyle">@style/AnimFade</item>
     </style>
     <style name="horizontal_slide" parent="android:style/Theme.Holo.Light.NoActionBar">
         <item name="android:windowAnimationStyle">@style/AnimFade2</item>
     </style>
-    <style name="nornal_style" parent="android:style/Theme.Holo.Light.NoActionBar"/>
+    <style name="nornal_style" parent="android:style/Theme.Holo.Light.NoActionBar" />
 </resources>

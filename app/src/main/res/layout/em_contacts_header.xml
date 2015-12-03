@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res/com.easemob.chatuidemo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <com.easemob.chatuidemo.widget.ContactItemView
         android:id="@+id/application_item"

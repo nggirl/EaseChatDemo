@@ -1,10 +1,10 @@
 /**
  * Copyright (C) 2013-2014 EaseMob Technologies. All rights reserved.
- *
+ * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- *     http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -21,7 +21,7 @@ import android.widget.TextView;
 
 import com.easemob.chatuidemo.R;
 
-public class ExitGroupDialog extends BaseActivity{
+public class ExitGroupDialog extends BaseActivity {
     private TextView text;
     private Button exitBtn;
 
@@ -29,27 +29,27 @@ public class ExitGroupDialog extends BaseActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.em_logout_actionsheet);
-        
+
         text = (TextView) findViewById(R.id.tv_text);
         exitBtn = (Button) findViewById(R.id.btn_exit);
-        
+
         text.setText(R.string.exit_group_hint);
         String toast = getIntent().getStringExtra("deleteToast");
-        if(toast != null)
-        	text.setText(toast);
+        if (toast != null)
+            text.setText(toast);
         exitBtn.setText(R.string.exit_group);
     }
-    
-    public void logout(View view){
-    	setResult(RESULT_OK);
+
+    public void logout(View view) {
+        setResult(RESULT_OK);
         finish();
-        
+
     }
-    
+
     public void cancel(View view) {
         finish();
     }
-    
+
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         finish();

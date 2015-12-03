@@ -8,9 +8,8 @@ import com.easemob.easeui.ui.EaseChatFragment;
 
 /**
  * 聊天页面，需要fragment的使用{@link #EaseChatFragment}
- *
  */
-public class ChatActivity extends BaseActivity{
+public class ChatActivity extends BaseActivity {
     public static ChatActivity activityInstance;
     private EaseChatFragment chatFragment;
     String toChatUsername;
@@ -27,15 +26,15 @@ public class ChatActivity extends BaseActivity{
         //传入参数
         chatFragment.setArguments(getIntent().getExtras());
         getSupportFragmentManager().beginTransaction().add(R.id.container, chatFragment).commit();
-        
+
     }
-    
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
         activityInstance = null;
     }
-    
+
     @Override
     protected void onNewIntent(Intent intent) {
         // 点击notification bar进入聊天页面，保证只有一个聊天页面
@@ -48,12 +47,13 @@ public class ChatActivity extends BaseActivity{
         }
 
     }
+
     @Override
     public void onBackPressed() {
         chatFragment.onBackPressed();
     }
-    
-    public String getToChatUsername(){
+
+    public String getToChatUsername() {
         return toChatUsername;
     }
 }

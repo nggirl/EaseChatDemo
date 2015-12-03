@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/transparent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/header"
@@ -20,7 +20,7 @@
         android:layout_height="60dp"
         android:background="@drawable/ease_mm_listitem"
         android:gravity="center_vertical"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <CheckBox
             android:id="@+id/checkbox"

@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.easemob.chatuidemo.R;
 
-public class ContactItemView extends LinearLayout{
+public class ContactItemView extends LinearLayout {
 
     private TextView unreadMsgView;
 
@@ -25,32 +25,33 @@ public class ContactItemView extends LinearLayout{
         super(context);
         init(context, null);
     }
-    
-    private void init(Context context, AttributeSet attrs){
+
+    private void init(Context context, AttributeSet attrs) {
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.ContactItemView);
         String name = ta.getString(R.styleable.ContactItemView_contactItemName);
         Drawable image = ta.getDrawable(R.styleable.ContactItemView_contactItemImage);
         ta.recycle();
-        
+
         LayoutInflater.from(context).inflate(R.layout.em_widget_contact_item, this);
         ImageView avatar = (ImageView) findViewById(R.id.avatar);
         unreadMsgView = (TextView) findViewById(R.id.unread_msg_number);
         TextView nameView = (TextView) findViewById(R.id.name);
-        if(image != null){
+        if (image != null) {
             avatar.setImageDrawable(image);
         }
         nameView.setText(name);
     }
-    
-    public void setUnreadCount(int unreadCount){
+
+    public void setUnreadCount(int unreadCount) {
         unreadMsgView.setText(String.valueOf(unreadCount));
     }
-    
-    public void showUnreadMsgView(){
+
+    public void showUnreadMsgView() {
         unreadMsgView.setVisibility(View.VISIBLE);
     }
-    public void hideUnreadMsgView(){
+
+    public void hideUnreadMsgView() {
         unreadMsgView.setVisibility(View.INVISIBLE);
     }
-    
+
 }

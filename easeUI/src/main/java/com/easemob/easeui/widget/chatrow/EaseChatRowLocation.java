@@ -8,19 +8,19 @@ import android.widget.TextView;
 
 import com.easemob.chat.EMChatManager;
 import com.easemob.chat.EMMessage;
-import com.easemob.chat.LocationMessageBody;
 import com.easemob.chat.EMMessage.ChatType;
+import com.easemob.chat.LocationMessageBody;
 import com.easemob.easeui.R;
 import com.easemob.easeui.ui.EaseBaiduMapActivity;
 import com.easemob.exceptions.EaseMobException;
 import com.easemob.util.LatLng;
 
-public class EaseChatRowLocation extends EaseChatRow{
+public class EaseChatRowLocation extends EaseChatRow {
 
     private TextView locationView;
     private LocationMessageBody locBody;
 
-	public EaseChatRowLocation(Context context, EMMessage message, int position, BaseAdapter adapter) {
+    public EaseChatRowLocation(Context context, EMMessage message, int position, BaseAdapter adapter) {
         super(context, message, position, adapter);
     }
 
@@ -32,42 +32,42 @@ public class EaseChatRowLocation extends EaseChatRow{
 
     @Override
     protected void onFindViewById() {
-    	locationView = (TextView) findViewById(R.id.tv_location);
+        locationView = (TextView) findViewById(R.id.tv_location);
     }
 
 
     @Override
     protected void onSetUpView() {
-		locBody = (LocationMessageBody) message.getBody();
-		locationView.setText(locBody.getAddress());
+        locBody = (LocationMessageBody) message.getBody();
+        locationView.setText(locBody.getAddress());
 
-		// deal with send message
-		if (message.direct == EMMessage.Direct.SEND) {
-		    setMessageSendCallback();
+        // deal with send message
+        if (message.direct == EMMessage.Direct.SEND) {
+            setMessageSendCallback();
             switch (message.status) {
-            case CREATE: 
-                progressBar.setVisibility(View.VISIBLE);
-                statusView.setVisibility(View.GONE);
-                // 发送消息
+                case CREATE:
+                    progressBar.setVisibility(View.VISIBLE);
+                    statusView.setVisibility(View.GONE);
+                    // 发送消息
 //                sendMsgInBackground(message);
-                break;
-            case SUCCESS: // 发送成功
-                progressBar.setVisibility(View.GONE);
-                statusView.setVisibility(View.GONE);
-                break;
-            case FAIL: // 发送失败
-                progressBar.setVisibility(View.GONE);
-                statusView.setVisibility(View.VISIBLE);
-                break;
-            case INPROGRESS: // 发送中
-                progressBar.setVisibility(View.VISIBLE);
-                statusView.setVisibility(View.GONE);
-                break;
-            default:
-               break;
+                    break;
+                case SUCCESS: // 发送成功
+                    progressBar.setVisibility(View.GONE);
+                    statusView.setVisibility(View.GONE);
+                    break;
+                case FAIL: // 发送失败
+                    progressBar.setVisibility(View.GONE);
+                    statusView.setVisibility(View.VISIBLE);
+                    break;
+                case INPROGRESS: // 发送中
+                    progressBar.setVisibility(View.VISIBLE);
+                    statusView.setVisibility(View.GONE);
+                    break;
+                default:
+                    break;
             }
-        }else{
-            if(!message.isAcked() && message.getChatType() == ChatType.Chat){
+        } else {
+            if (!message.isAcked() && message.getChatType() == ChatType.Chat) {
                 try {
                     EMChatManager.getInstance().ackMessageRead(message.getFrom(), message.getMsgId());
                     message.isAcked = true;
@@ -77,12 +77,12 @@ public class EaseChatRowLocation extends EaseChatRow{
             }
         }
     }
-    
+
     @Override
     protected void onUpdateView() {
         adapter.notifyDataSetChanged();
     }
-    
+
     @Override
     protected void onBubbleClick() {
         Intent intent = new Intent(context, EaseBaiduMapActivity.class);
@@ -91,27 +91,27 @@ public class EaseChatRowLocation extends EaseChatRow{
         intent.putExtra("address", locBody.getAddress());
         activity.startActivity(intent);
     }
-    
+
     /*
-	 * 点击地图消息listener
+     * 点击地图消息listener
 	 */
-	protected class MapClickListener implements View.OnClickListener {
+    protected class MapClickListener implements View.OnClickListener {
 
-		LatLng location;
-		String address;
+        LatLng location;
+        String address;
 
-		public MapClickListener(LatLng loc, String address) {
-			location = loc;
-			this.address = address;
+        public MapClickListener(LatLng loc, String address) {
+            location = loc;
+            this.address = address;
 
-		}
+        }
 
-		@Override
-		public void onClick(View v) {
-		   
-		}
+        @Override
+        public void onClick(View v) {
 
-	}
+        }
+
+    }
 
 
 }

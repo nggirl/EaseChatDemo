@@ -2,7 +2,7 @@
     android:id="@+id/splash_root"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/em_splash" >
+    android:background="@drawable/em_splash">
 
     <ImageView
         android:id="@+id/iv_splash_logo"
@@ -27,7 +27,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="50dip"
         android:gravity="center_horizontal"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
@@ -35,8 +35,7 @@
             android:text="环信DEMO"
             android:textColor="#fff"
             android:textSize="20dip"
-            android:typeface="normal" >
-        </TextView>
+            android:typeface="normal"></TextView>
 
         <TextView
             android:id="@+id/tv_version"
@@ -45,8 +44,7 @@
             android:layout_marginLeft="10dip"
             android:text="2.1.7"
             android:textColor="#fff"
-            android:textSize="20sp" >
-        </TextView>
+            android:textSize="20sp"></TextView>
     </LinearLayout>
 
 </RelativeLayout>

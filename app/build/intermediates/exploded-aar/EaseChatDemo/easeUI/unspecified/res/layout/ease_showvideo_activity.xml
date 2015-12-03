@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/loading_layout"
@@ -11,8 +11,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:gravity="center"
-        android:visibility="gone"
-         >
+        android:visibility="gone">
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -23,7 +22,8 @@
             android:layout_height="wrap_content"
             android:max="100"
             android:layout_centerHorizontal="true" />
-        <TextView 
+
+        <TextView
             android:id="@+id/textView"
             android:layout_below="@id/progressBar"
             android:layout_width="match_parent"
@@ -31,9 +31,9 @@
             android:gravity="center"
             android:text="@string/is_down_please_wait"
             android:textColor="@android:color/black"
-            
+
             />
-        
-        
+
+
     </RelativeLayout>
 </LinearLayout><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/layout/ease_showvideo_activity.xml -->

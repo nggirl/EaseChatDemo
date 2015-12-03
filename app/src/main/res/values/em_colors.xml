@@ -36,10 +36,10 @@
     <color name="black_deep">#FF000000</color>
     <color name="btn_answer_pressed">#4ebcd3</color>
     <color name="btn_answer_normal">#2dafa3</color>
-	<color name="list_item_secondary_color">#888888</color>
-	<color name="list_item_primary_color">#000</color>
-	<color name="holo_blue_bright">#ff00ddff</color>
-	<color name="holo_green_light">#ff99cc00</color>
-	<color name="holo_orange_light">#ffffbb33</color>
-	<color name="holo_red_light">#ffff4444</color>
+    <color name="list_item_secondary_color">#888888</color>
+    <color name="list_item_primary_color">#000</color>
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
 </resources>

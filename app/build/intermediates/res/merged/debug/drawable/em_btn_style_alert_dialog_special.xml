@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
-   <!--  <item android:drawable="@color/btn_logout_pressed" android:state_pressed="true"/>
-    <item android:drawable="@color/btn_logout_normal"/> -->
+    <!--  <item android:drawable="@color/btn_logout_pressed" android:state_pressed="true"/>
+     <item android:drawable="@color/btn_logout_normal"/> -->
 
-    
-    <item android:drawable="@drawable/em_btn_logout_pressed_shape" android:state_pressed="true"/>
-    <item android:drawable="@drawable/em_btn_logout_normal_shape"/>
-   
+
+    <item android:drawable="@drawable/em_btn_logout_pressed_shape" android:state_pressed="true" />
+    <item android:drawable="@drawable/em_btn_logout_normal_shape" />
+
 
 </selector><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/drawable/em_btn_style_alert_dialog_special.xml -->

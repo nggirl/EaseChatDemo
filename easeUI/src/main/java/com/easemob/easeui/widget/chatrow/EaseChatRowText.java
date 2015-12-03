@@ -9,30 +9,30 @@ import android.widget.TextView.BufferType;
 
 import com.easemob.chat.EMChatManager;
 import com.easemob.chat.EMMessage;
-import com.easemob.chat.TextMessageBody;
 import com.easemob.chat.EMMessage.ChatType;
+import com.easemob.chat.TextMessageBody;
 import com.easemob.easeui.R;
 import com.easemob.easeui.utils.EaseSmileUtils;
 import com.easemob.exceptions.EaseMobException;
 
-public class EaseChatRowText extends EaseChatRow{
+public class EaseChatRowText extends EaseChatRow {
 
-	private TextView contentView;
+    private TextView contentView;
 
     public EaseChatRowText(Context context, EMMessage message, int position, BaseAdapter adapter) {
-		super(context, message, position, adapter);
-	}
+        super(context, message, position, adapter);
+    }
 
-	@Override
-	protected void onInflatView() {
-		inflater.inflate(message.direct == EMMessage.Direct.RECEIVE ?
-				R.layout.ease_row_received_message : R.layout.ease_row_sent_message, this);
-	}
+    @Override
+    protected void onInflatView() {
+        inflater.inflate(message.direct == EMMessage.Direct.RECEIVE ?
+                R.layout.ease_row_received_message : R.layout.ease_row_sent_message, this);
+    }
 
-	@Override
-	protected void onFindViewById() {
-		contentView = (TextView) findViewById(R.id.tv_chatcontent);
-	}
+    @Override
+    protected void onFindViewById() {
+        contentView = (TextView) findViewById(R.id.tv_chatcontent);
+    }
 
     @Override
     public void onSetUpView() {
@@ -48,29 +48,29 @@ public class EaseChatRowText extends EaseChatRow{
         if (message.direct == EMMessage.Direct.SEND) {
             setMessageSendCallback();
             switch (message.status) {
-            case CREATE: 
-                progressBar.setVisibility(View.VISIBLE);
-                statusView.setVisibility(View.GONE);
-                // 发送消息
+                case CREATE:
+                    progressBar.setVisibility(View.VISIBLE);
+                    statusView.setVisibility(View.GONE);
+                    // 发送消息
 //                sendMsgInBackground(message);
-                break;
-            case SUCCESS: // 发送成功
-                progressBar.setVisibility(View.GONE);
-                statusView.setVisibility(View.GONE);
-                break;
-            case FAIL: // 发送失败
-                progressBar.setVisibility(View.GONE);
-                statusView.setVisibility(View.VISIBLE);
-                break;
-            case INPROGRESS: // 发送中
-                progressBar.setVisibility(View.VISIBLE);
-                statusView.setVisibility(View.GONE);
-                break;
-            default:
-               break;
+                    break;
+                case SUCCESS: // 发送成功
+                    progressBar.setVisibility(View.GONE);
+                    statusView.setVisibility(View.GONE);
+                    break;
+                case FAIL: // 发送失败
+                    progressBar.setVisibility(View.GONE);
+                    statusView.setVisibility(View.VISIBLE);
+                    break;
+                case INPROGRESS: // 发送中
+                    progressBar.setVisibility(View.VISIBLE);
+                    statusView.setVisibility(View.GONE);
+                    break;
+                default:
+                    break;
             }
-        }else{
-            if(!message.isAcked() && message.getChatType() == ChatType.Chat){
+        } else {
+            if (!message.isAcked() && message.getChatType() == ChatType.Chat) {
                 try {
                     EMChatManager.getInstance().ackMessageRead(message.getFrom(), message.getMsgId());
                     message.isAcked = true;
@@ -89,9 +89,8 @@ public class EaseChatRowText extends EaseChatRow{
     @Override
     protected void onBubbleClick() {
         // TODO Auto-generated method stub
-        
-    }
 
+    }
 
 
 }

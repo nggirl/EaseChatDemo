@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:paddingTop="13dp" >
+    android:paddingTop="13dp">
 
     <TextView
         android:id="@+id/timestamp"
@@ -15,7 +15,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_chat_activity" >
+        android:layout_marginTop="@dimen/margin_chat_activity">
 
         <ImageView
             android:id="@+id/iv_userhead"
@@ -29,12 +29,11 @@
 
         <RelativeLayout
             android:id="@+id/bubble"
-            android:layout_width="wrap_content" 
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin_chat_activity"
             android:layout_toRightOf="@id/iv_userhead"
-            android:layout_below="@+id/tv_userid"
-             >
+            android:layout_below="@+id/tv_userid">
 
             <ImageView
                 android:id="@+id/image"
@@ -42,12 +41,11 @@
                 android:layout_height="wrap_content"
                 android:scaleType="fitXY"
                 android:minHeight="90dp"
-          		  android:minWidth="90dp"
-                />
+                android:minWidth="90dp" />
 
         </RelativeLayout>
 
-         <TextView
+        <TextView
             android:id="@+id/tv_userid"
             style="@style/chat_text_name_style"
             android:layout_width="wrap_content"

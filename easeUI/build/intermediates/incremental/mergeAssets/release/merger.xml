@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/assets"/></dataSet><dataSet config="release"><source path="/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/release/assets"/></dataSet></merger>
+<merger version="3">
+    <dataSet config="main">
+        <source
+            path="/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/assets" />
+    </dataSet>
+    <dataSet config="release">
+        <source
+            path="/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/release/assets" />
+    </dataSet>
+</merger>

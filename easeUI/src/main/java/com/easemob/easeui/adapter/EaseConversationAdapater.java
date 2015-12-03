@@ -1,9 +1,5 @@
 package com.easemob.easeui.adapter;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.TypedValue;
@@ -31,9 +27,12 @@ import com.easemob.easeui.utils.EaseSmileUtils;
 import com.easemob.easeui.utils.EaseUserUtils;
 import com.easemob.util.DateUtils;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 /**
  * 会话列表adapter
- *
  */
 public class EaseConversationAdapater extends ArrayAdapter<EMConversation> {
     private static final String TAG = "ChatAllHistoryAdapter";
@@ -41,7 +40,7 @@ public class EaseConversationAdapater extends ArrayAdapter<EMConversation> {
     private List<EMConversation> copyConversationList;
     private ConversationFilter conversationFilter;
     private boolean notiyfyByFilter;
-    
+
     protected int primaryColor;
     protected int secondaryColor;
     protected int timeColor;
@@ -50,7 +49,7 @@ public class EaseConversationAdapater extends ArrayAdapter<EMConversation> {
     protected float timeSize;
 
     public EaseConversationAdapater(Context context, int resource,
-            List<EMConversation> objects) {
+                                    List<EMConversation> objects) {
         super(context, resource, objects);
         conversationList = objects;
         copyConversationList = new ArrayList<EMConversation>();
@@ -98,17 +97,17 @@ public class EaseConversationAdapater extends ArrayAdapter<EMConversation> {
         EMConversation conversation = getItem(position);
         // 获取用户username或者群组groupid
         String username = conversation.getUserName();
-        
+
         if (conversation.getType() == EMConversationType.GroupChat) {
             // 群聊消息，显示群聊头像
             holder.avatar.setImageResource(R.drawable.ease_group_icon);
             EMGroup group = EMGroupManager.getInstance().getGroup(username);
             holder.name.setText(group != null ? group.getGroupName() : username);
-        } else if(conversation.getType() == EMConversationType.ChatRoom){
+        } else if (conversation.getType() == EMConversationType.ChatRoom) {
             holder.avatar.setImageResource(R.drawable.ease_group_icon);
             EMChatRoom room = EMChatManager.getInstance().getChatRoom(username);
             holder.name.setText(room != null && !TextUtils.isEmpty(room.getName()) ? room.getName() : username);
-        }else {
+        } else {
             EaseUserUtils.setUserAvatar(getContext(), username, holder.avatar);
             EaseUserUtils.setUserNick(username, holder.name);
         }
@@ -134,31 +133,31 @@ public class EaseConversationAdapater extends ArrayAdapter<EMConversation> {
                 holder.msgState.setVisibility(View.GONE);
             }
         }
-        
+
         //设置自定义属性
         holder.name.setTextColor(primaryColor);
         holder.message.setTextColor(secondaryColor);
         holder.time.setTextColor(timeColor);
-        if(primarySize != 0)
+        if (primarySize != 0)
             holder.name.setTextSize(TypedValue.COMPLEX_UNIT_PX, primarySize);
-        if(secondarySize != 0)
+        if (secondarySize != 0)
             holder.message.setTextSize(TypedValue.COMPLEX_UNIT_PX, secondarySize);
-        if(timeSize != 0)
+        if (timeSize != 0)
             holder.time.setTextSize(TypedValue.COMPLEX_UNIT_PX, timeSize);
 
         return convertView;
     }
-    
+
     @Override
     public void notifyDataSetChanged() {
         super.notifyDataSetChanged();
-        if(!notiyfyByFilter){
+        if (!notiyfyByFilter) {
             copyConversationList.clear();
             copyConversationList.addAll(conversationList);
             notiyfyByFilter = false;
         }
     }
-    
+
     @Override
     public Filter getFilter() {
         if (conversationFilter == null) {
@@ -166,7 +165,7 @@ public class EaseConversationAdapater extends ArrayAdapter<EMConversation> {
         }
         return conversationFilter;
     }
-    
+
 
     public void setPrimaryColor(int primaryColor) {
         this.primaryColor = primaryColor;
@@ -191,9 +190,6 @@ public class EaseConversationAdapater extends ArrayAdapter<EMConversation> {
     public void setTimeSize(float timeSize) {
         this.timeSize = timeSize;
     }
-
-
-
 
 
     private class ConversationFilter extends Filter {
@@ -221,30 +217,30 @@ public class EaseConversationAdapater extends ArrayAdapter<EMConversation> {
                 for (int i = 0; i < count; i++) {
                     final EMConversation value = mOriginalValues.get(i);
                     String username = value.getUserName();
-                    
+
                     EMGroup group = EMGroupManager.getInstance().getGroup(username);
-                    if(group != null){
+                    if (group != null) {
                         username = group.getGroupName();
-                    }else{
+                    } else {
                         EaseUser user = EaseUserUtils.getUserInfo(username);
-                        if(user != null && user.getNick() != null)
+                        if (user != null && user.getNick() != null)
                             username = user.getNick();
                     }
 
                     // First match against the whole ,non-splitted value
                     if (username.startsWith(prefixString)) {
                         newValues.add(value);
-                    } else{
-                          final String[] words = username.split(" ");
-                            final int wordCount = words.length;
+                    } else {
+                        final String[] words = username.split(" ");
+                        final int wordCount = words.length;
 
-                            // Start at index 0, in case valueText starts with space(s)
-                            for (int k = 0; k < wordCount; k++) {
-                                if (words[k].startsWith(prefixString)) {
-                                    newValues.add(value);
-                                    break;
-                                }
+                        // Start at index 0, in case valueText starts with space(s)
+                        for (int k = 0; k < wordCount; k++) {
+                            if (words[k].startsWith(prefixString)) {
+                                newValues.add(value);
+                                break;
                             }
+                        }
                     }
                 }
 
@@ -268,22 +264,36 @@ public class EaseConversationAdapater extends ArrayAdapter<EMConversation> {
         }
 
     }
-    
-    
+
+
     private static class ViewHolder {
-        /** 和谁的聊天记录 */
+        /**
+         * 和谁的聊天记录
+         */
         TextView name;
-        /** 消息未读数 */
+        /**
+         * 消息未读数
+         */
         TextView unreadLabel;
-        /** 最后一条消息的内容 */
+        /**
+         * 最后一条消息的内容
+         */
         TextView message;
-        /** 最后一条消息的时间 */
+        /**
+         * 最后一条消息的时间
+         */
         TextView time;
-        /** 用户头像 */
+        /**
+         * 用户头像
+         */
         ImageView avatar;
-        /** 最后一条消息的发送状态 */
+        /**
+         * 最后一条消息的发送状态
+         */
         View msgState;
-        /** 整个list中每一行总布局 */
+        /**
+         * 整个list中每一行总布局
+         */
         RelativeLayout list_itease_layout;
 
     }

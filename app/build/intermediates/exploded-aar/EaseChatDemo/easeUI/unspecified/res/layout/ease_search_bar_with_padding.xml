@@ -6,8 +6,7 @@
     android:paddingRight="27dp"
     android:paddingTop="7dp"
     android:paddingBottom="7dp"
-    android:background="#ededed"
-     >
+    android:background="#ededed">
 
     <EditText
         android:paddingTop="5dp"
@@ -22,10 +21,9 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:hint="@string/search"
-         android:textSize="16sp"
-         android:layout_marginLeft="4dp"
-        android:singleLine="true"
-         />
+        android:textSize="16sp"
+        android:layout_marginLeft="4dp"
+        android:singleLine="true" />
 
     <ImageButton
         android:id="@+id/search_clear"

@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-       />
- <!-- android:text="@string/conversation" --> 
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <!-- android:text="@string/conversation" -->
 </LinearLayout><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/layout/ease_conversation_item.xml --><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/build/intermediates/bundles/debug/res/layout/ease_conversation_item.xml -->

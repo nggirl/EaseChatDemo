@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/values-zh-rCN/ease_strings.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="Add_a_button_was_clicked">添加按钮被点击</string>
     <string name="Add_a_friend">加个好友呗</string>
     <string name="Add_group_members_fail">添加群成员失败:</string>
@@ -147,7 +147,7 @@
     <string name="cant_find_pictures">找不到图片</string>
     <string name="change_the_group_name_failed_please">改变群名称失败，请检查网络或稍后重试</string>
     <string name="chat_room">聊天室</string>
-    <string name="chatroom_allow_owner_leave"> 允许聊天室群主离开</string>
+    <string name="chatroom_allow_owner_leave">允许聊天室群主离开</string>
     <string name="chatset">聊天设置</string>
     <string name="chatting_is_dissolution">正在解散群聊...</string>
     <string name="clear_all_records">是否清空所有聊天记录？</string>
@@ -227,7 +227,9 @@
     <string name="newchat">新建聊天</string>
     <string name="newnotify">接收新消息通知</string>
     <string name="nickname">昵称</string>
-    <string name="nickname_description">设置此昵称以后，在与iOS客户端demo聊天过程中，iOS一侧会显示此昵称而不是环信ID，如果对方使用安卓客户端则此设置不生效</string>
+    <string name="nickname_description">
+        设置此昵称以后，在与iOS客户端demo聊天过程中，iOS一侧会显示此昵称而不是环信ID，如果对方使用安卓客户端则此设置不生效
+    </string>
     <string name="no_more_messages">没有更多的消息了</string>
     <string name="not_add_myself">不能添加自己</string>
     <string name="not_connect_to_server">尚未连接至服务器，请稍后重试</string>

@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/container"
-    >
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/container">
 
-</FrameLayout>
-<!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/layout/em_activity_chat.xml -->
+</FrameLayout><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/layout/em_activity_chat.xml -->

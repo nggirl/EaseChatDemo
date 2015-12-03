@@ -11,13 +11,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.easemob.EMError;
-import com.easemob.chat.EMChatManager;
 import com.easemob.chat.EMGroup;
 import com.easemob.chat.EMGroupManager;
 import com.easemob.chatuidemo.R;
 import com.easemob.exceptions.EaseMobException;
 
-public class PublicGroupsSeachActivity extends BaseActivity{
+public class PublicGroupsSeachActivity extends BaseActivity {
     private RelativeLayout containerLayout;
     private EditText idET;
     private TextView nameText;
@@ -27,28 +26,29 @@ public class PublicGroupsSeachActivity extends BaseActivity{
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
         setContentView(R.layout.em_activity_public_groups_search);
-        
+
         containerLayout = (RelativeLayout) findViewById(R.id.rl_searched_group);
         idET = (EditText) findViewById(R.id.et_search_id);
         nameText = (TextView) findViewById(R.id.name);
-        
+
         searchedGroup = null;
     }
-    
+
     /**
      * 搜索
+     *
      * @param v
      */
-    public void searchGroup(View v){
-        if(TextUtils.isEmpty(idET.getText())){
+    public void searchGroup(View v) {
+        if (TextUtils.isEmpty(idET.getText())) {
             return;
         }
-        
+
         final ProgressDialog pd = new ProgressDialog(this);
         pd.setMessage(getResources().getString(R.string.searching));
         pd.setCancelable(false);
         pd.show();
-        
+
         new Thread(new Runnable() {
 
             public void run() {
@@ -61,7 +61,7 @@ public class PublicGroupsSeachActivity extends BaseActivity{
                             nameText.setText(searchedGroup.getGroupName());
                         }
                     });
-                    
+
                 } catch (final EaseMobException e) {
                     e.printStackTrace();
                     runOnUiThread(new Runnable() {
@@ -69,9 +69,9 @@ public class PublicGroupsSeachActivity extends BaseActivity{
                             pd.dismiss();
                             searchedGroup = null;
                             containerLayout.setVisibility(View.GONE);
-                            if(e.getErrorCode() == EMError.GROUP_NOT_EXIST){
+                            if (e.getErrorCode() == EMError.GROUP_NOT_EXIST) {
                                 Toast.makeText(getApplicationContext(), getResources().getString(R.string.group_not_existed), 0).show();
-                            }else{
+                            } else {
                                 Toast.makeText(getApplicationContext(), getResources().getString(R.string.group_search_failed) + " : " + getString(R.string.connect_failuer_toast), 0).show();
                             }
                         }
@@ -79,15 +79,16 @@ public class PublicGroupsSeachActivity extends BaseActivity{
                 }
             }
         }).start();
-        
+
     }
-    
-    
+
+
     /**
      * 点击搜索到的群组进入群组信息页面
+     *
      * @param view
      */
-    public void enterToDetails(View view){
+    public void enterToDetails(View view) {
         startActivity(new Intent(this, GroupSimpleDetailActivity.class));
     }
 }

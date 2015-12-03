@@ -1,10 +1,10 @@
 /**
  * Copyright (C) 2013-2014 EaseMob Technologies. All rights reserved.
- *
+ * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- *     http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -23,26 +23,26 @@ import com.easemob.chatuidemo.ui.VideoCallActivity;
 import com.easemob.chatuidemo.ui.VoiceCallActivity;
 import com.easemob.util.EMLog;
 
-public class CallReceiver extends BroadcastReceiver{
+public class CallReceiver extends BroadcastReceiver {
 
-	@Override
-	public void onReceive(Context context, Intent intent) {
-		if(!DemoHelper.getInstance().isLoggedIn())
-		    return;
-		//拨打方username
-		String from = intent.getStringExtra("from");
-		//call type
-		String type = intent.getStringExtra("type");
-		if("video".equals(type)){ //视频通话
-		    context.startActivity(new Intent(context, VideoCallActivity.class).
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        if (!DemoHelper.getInstance().isLoggedIn())
+            return;
+        //拨打方username
+        String from = intent.getStringExtra("from");
+        //call type
+        String type = intent.getStringExtra("type");
+        if ("video".equals(type)) { //视频通话
+            context.startActivity(new Intent(context, VideoCallActivity.class).
                     putExtra("username", from).putExtra("isComingCall", true).
                     addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
-		}else{ //音频通话
-		    context.startActivity(new Intent(context, VoiceCallActivity.class).
-		            putExtra("username", from).putExtra("isComingCall", true).
-		            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
-		}
-		EMLog.d("CallReceiver", "app received a incoming call");
-	}
+        } else { //音频通话
+            context.startActivity(new Intent(context, VoiceCallActivity.class).
+                    putExtra("username", from).putExtra("isComingCall", true).
+                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+        }
+        EMLog.d("CallReceiver", "app received a incoming call");
+    }
 
 }

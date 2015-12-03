@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/values-ru-rRU/ease_strings.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="Application_and_notify">Заявки и уведомления</string>
     <string name="Current_version">Предыдущая версия</string>
     <string name="Empty_the_chat_record">Очистить историю чата</string>
@@ -51,8 +51,11 @@
     <string name="confirm_forward_to">Вы уверены, что Вы хотите переслать：%1$s ?</string>
     <string name="confirm_resend">Вы уверены, что хотите отправить сообщение еще раз?</string>
     <string name="confirmpassword">Подтвердить пароль</string>
-    <string name="connect_conflict">В данный момент эта уч.запись используется другим устройством</string>
-    <string name="connect_failuer_toast">Пожалуйста, проверьте соединение с интернетом либо попробуйте еще раз позже</string>
+    <string name="connect_conflict">В данный момент эта уч.запись используется другим устройством
+    </string>
+    <string name="connect_failuer_toast">Пожалуйста, проверьте соединение с интернетом либо
+        попробуйте еще раз позже
+    </string>
     <string name="copy">Копировать</string>
     <string name="copy_message">Копировать сообщение</string>
     <string name="delete">Удалить</string>
@@ -77,11 +80,15 @@
     <string name="location_recv">[Местоположение%1$]</string>
     <string name="login">Войти</string>
     <string name="logout">Выйти</string>
-    <string name="logout_hint">Сохранять записи при выходе из приложения, для возвращения использовать ту же уч.запись</string>
+    <string name="logout_hint">Сохранять записи при выходе из приложения, для возвращения
+        использовать ту же уч.запись
+    </string>
     <string name="move_up_to_cancel">Провести вверх для отмены отправки</string>
     <string name="mute">Без звука</string>
     <string name="network_isnot_available">Сеть недоступна</string>
-    <string name="network_unavailable">Ошибка соединения, пожалуйста, проверьте Ваше соединение с интернетом.</string>
+    <string name="network_unavailable">Ошибка соединения, пожалуйста, проверьте Ваше соединение с
+        интернетом.
+    </string>
     <string name="newchat">Создать чат</string>
     <string name="newnotify">Посылать уведомление при получении сообщения</string>
     <string name="not_download">Не скачано:</string>

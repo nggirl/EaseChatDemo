@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/values-large/ease_dimens.xml -->
-    <eat-comment/>
+    <eat-comment />
     <dimen name="image_thumbnail_size">148dp</dimen>
     <dimen name="image_thumbnail_spacing">2dp</dimen>
 </resources>

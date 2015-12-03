@@ -110,9 +110,9 @@
     <string name="agree">Согласен</string>
     <string name="Group_chat">Чат:</string>
     <string name="not_download">Не скачано:</string>
-	<string name="Please_enter_a_username">Пожалуйста, введите имя пользователя</string>
+    <string name="Please_enter_a_username">Пожалуйста, введите имя пользователя</string>
     <string name="is_down_please_wait">Пожалуйста подождите, видео загружается...</string>
     <string name="Exit_the_group_chat">Выйти из чата</string>
-    
-    
+
+
 </resources>

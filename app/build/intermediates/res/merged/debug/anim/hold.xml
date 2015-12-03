@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?> 
+<?xml version="1.0" encoding="utf-8"?>
 <translate xmlns:android="http://schemas.android.com/apk/res/android"
-       android:interpolator="@android:anim/accelerate_interpolator"
-       android:fromXDelta="0" android:toXDelta="0"
-       android:duration="300" /><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/anim/hold.xml --><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/build/intermediates/exploded-aar/EaseChatDemo/easeUI/unspecified/res/anim/hold.xml -->
+    android:interpolator="@android:anim/accelerate_interpolator" android:fromXDelta="0"
+    android:toXDelta="0"
+    android:duration="300" /><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/anim/hold.xml --><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/build/intermediates/exploded-aar/EaseChatDemo/easeUI/unspecified/res/anim/hold.xml -->

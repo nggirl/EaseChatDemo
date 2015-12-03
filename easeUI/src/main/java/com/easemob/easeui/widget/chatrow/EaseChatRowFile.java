@@ -1,7 +1,5 @@
 package com.easemob.easeui.widget.chatrow;
 
-import java.io.File;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -12,7 +10,6 @@ import android.widget.TextView;
 import com.easemob.EMCallBack;
 import com.easemob.chat.EMChatManager;
 import com.easemob.chat.EMMessage;
-import com.easemob.chat.FileMessageBody;
 import com.easemob.chat.NormalFileMessageBody;
 import com.easemob.easeui.R;
 import com.easemob.easeui.ui.EaseShowNormalFileActivity;
@@ -20,39 +17,41 @@ import com.easemob.exceptions.EaseMobException;
 import com.easemob.util.FileUtils;
 import com.easemob.util.TextFormater;
 
-public class EaseChatRowFile extends EaseChatRow{
+import java.io.File;
+
+public class EaseChatRowFile extends EaseChatRow {
 
     protected TextView fileNameView;
-	protected TextView fileSizeView;
+    protected TextView fileSizeView;
     protected TextView fileStateView;
-    
+
     protected EMCallBack sendfileCallBack;
-    
+
     protected boolean isNotifyProcessed;
     private NormalFileMessageBody fileMessageBody;
 
     public EaseChatRowFile(Context context, EMMessage message, int position, BaseAdapter adapter) {
-		super(context, message, position, adapter);
-	}
+        super(context, message, position, adapter);
+    }
 
-	@Override
-	protected void onInflatView() {
-	    inflater.inflate(message.direct == EMMessage.Direct.RECEIVE ? 
-	            R.layout.ease_row_received_file : R.layout.ease_row_sent_file, this);
-	}
+    @Override
+    protected void onInflatView() {
+        inflater.inflate(message.direct == EMMessage.Direct.RECEIVE ?
+                R.layout.ease_row_received_file : R.layout.ease_row_sent_file, this);
+    }
 
-	@Override
-	protected void onFindViewById() {
-	    fileNameView = (TextView) findViewById(R.id.tv_file_name);
+    @Override
+    protected void onFindViewById() {
+        fileNameView = (TextView) findViewById(R.id.tv_file_name);
         fileSizeView = (TextView) findViewById(R.id.tv_file_size);
         fileStateView = (TextView) findViewById(R.id.tv_file_state);
         percentageView = (TextView) findViewById(R.id.percentage);
-	}
+    }
 
 
-	@Override
-	protected void onSetUpView() {
-	    fileMessageBody = (NormalFileMessageBody) message.getBody();
+    @Override
+    protected void onSetUpView() {
+        fileMessageBody = (NormalFileMessageBody) message.getBody();
         String filePath = fileMessageBody.getLocalUrl();
         fileNameView.setText(fileMessageBody.getFileName());
         fileSizeView.setText(TextFormater.getDataSize(fileMessageBody.getFileSize()));
@@ -68,47 +67,47 @@ public class EaseChatRowFile extends EaseChatRow{
 
         // until here, deal with send voice msg
         handleSendMessage();
-	}
+    }
 
-	/**
-	 * 处理发送消息
-	 */
+    /**
+     * 处理发送消息
+     */
     protected void handleSendMessage() {
         setMessageSendCallback();
         switch (message.status) {
-        case SUCCESS:
-            progressBar.setVisibility(View.INVISIBLE);
-            if(percentageView != null)
-                percentageView.setVisibility(View.INVISIBLE);
-            statusView.setVisibility(View.INVISIBLE);
-            break;
-        case FAIL:
-            progressBar.setVisibility(View.INVISIBLE);
-            if(percentageView != null)
-                percentageView.setVisibility(View.INVISIBLE);
-            statusView.setVisibility(View.VISIBLE);
-            break;
-        case INPROGRESS:
-            progressBar.setVisibility(View.VISIBLE);
-            if(percentageView != null){
-                percentageView.setVisibility(View.VISIBLE);
-                percentageView.setText(message.progress + "%");
-            }
-            statusView.setVisibility(View.INVISIBLE);
-            break;
-        default:
-            progressBar.setVisibility(View.VISIBLE);
-            if(percentageView != null){
-                percentageView.setVisibility(View.VISIBLE);
-                percentageView.setText(message.progress + "%");
-            }
-            statusView.setVisibility(View.INVISIBLE);
-            break;
+            case SUCCESS:
+                progressBar.setVisibility(View.INVISIBLE);
+                if (percentageView != null)
+                    percentageView.setVisibility(View.INVISIBLE);
+                statusView.setVisibility(View.INVISIBLE);
+                break;
+            case FAIL:
+                progressBar.setVisibility(View.INVISIBLE);
+                if (percentageView != null)
+                    percentageView.setVisibility(View.INVISIBLE);
+                statusView.setVisibility(View.VISIBLE);
+                break;
+            case INPROGRESS:
+                progressBar.setVisibility(View.VISIBLE);
+                if (percentageView != null) {
+                    percentageView.setVisibility(View.VISIBLE);
+                    percentageView.setText(message.progress + "%");
+                }
+                statusView.setVisibility(View.INVISIBLE);
+                break;
+            default:
+                progressBar.setVisibility(View.VISIBLE);
+                if (percentageView != null) {
+                    percentageView.setVisibility(View.VISIBLE);
+                    percentageView.setText(message.progress + "%");
+                }
+                statusView.setVisibility(View.INVISIBLE);
+                break;
         }
     }
-	
 
-	@Override
+
+    @Override
     protected void onUpdateView() {
         adapter.notifyDataSetChanged();
     }
@@ -133,6 +132,6 @@ public class EaseChatRowFile extends EaseChatRow{
                 e.printStackTrace();
             }
         }
-        
+
     }
 }

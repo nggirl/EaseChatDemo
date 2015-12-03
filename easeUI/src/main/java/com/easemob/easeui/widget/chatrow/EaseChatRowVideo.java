@@ -1,7 +1,5 @@
 package com.easemob.easeui.widget.chatrow;
 
-import java.io.File;
-
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -23,35 +21,37 @@ import com.easemob.util.EMLog;
 import com.easemob.util.ImageUtils;
 import com.easemob.util.TextFormater;
 
-public class EaseChatRowVideo extends EaseChatRowFile{
+import java.io.File;
 
-	private ImageView imageView;
+public class EaseChatRowVideo extends EaseChatRowFile {
+
+    private ImageView imageView;
     private TextView sizeView;
     private TextView timeLengthView;
     private ImageView playView;
 
     public EaseChatRowVideo(Context context, EMMessage message, int position, BaseAdapter adapter) {
-		super(context, message, position, adapter);
-	}
+        super(context, message, position, adapter);
+    }
 
-	@Override
-	protected void onInflatView() {
-		inflater.inflate(message.direct == EMMessage.Direct.RECEIVE ?
-				R.layout.ease_row_received_video : R.layout.ease_row_sent_video, this);
-	}
+    @Override
+    protected void onInflatView() {
+        inflater.inflate(message.direct == EMMessage.Direct.RECEIVE ?
+                R.layout.ease_row_received_video : R.layout.ease_row_sent_video, this);
+    }
 
-	@Override
-	protected void onFindViewById() {
-	    imageView = ((ImageView) findViewById(R.id.chatting_content_iv));
+    @Override
+    protected void onFindViewById() {
+        imageView = ((ImageView) findViewById(R.id.chatting_content_iv));
         sizeView = (TextView) findViewById(R.id.chatting_size_iv);
         timeLengthView = (TextView) findViewById(R.id.chatting_length_iv);
         playView = (ImageView) findViewById(R.id.chatting_status_btn);
         percentageView = (TextView) findViewById(R.id.percentage);
-	}
+    }
 
-	@Override
-	protected void onSetUpView() {
-	    VideoMessageBody videoBody = (VideoMessageBody) message.getBody();
+    @Override
+    protected void onSetUpView() {
+        VideoMessageBody videoBody = (VideoMessageBody) message.getBody();
         // final File image=new File(PathUtil.getInstance().getVideoPath(),
         // videoBody.getFileName());
         String localThumb = videoBody.getLocalThumb();
@@ -97,11 +97,11 @@ public class EaseChatRowVideo extends EaseChatRowFile{
         }
         //处理发送方消息
         handleSendMessage();
-	}
-	
-	@Override
-	protected void onBubbleClick() {
-	    VideoMessageBody videoBody = (VideoMessageBody) message.getBody();
+    }
+
+    @Override
+    protected void onBubbleClick() {
+        VideoMessageBody videoBody = (VideoMessageBody) message.getBody();
         EMLog.d(TAG, "video view is on click");
         Intent intent = new Intent(context, EaseShowVideoActivity.class);
         intent.putExtra("localpath", videoBody.getLocalUrl());
@@ -117,16 +117,14 @@ public class EaseChatRowVideo extends EaseChatRowFile{
             }
         }
         activity.startActivity(intent);
-	}
-	
-	/**
+    }
+
+    /**
      * 展示视频缩略图
-     * 
-     * @param localThumb
-     *            本地缩略图路径
+     *
+     * @param localThumb   本地缩略图路径
      * @param iv
-     * @param thumbnailUrl
-     *            远程缩略图路径
+     * @param thumbnailUrl 远程缩略图路径
      * @param message
      */
     private void showVideoThumbView(final String localThumb, final ImageView iv, String thumbnailUrl, final EMMessage message) {
@@ -147,7 +145,7 @@ public class EaseChatRowVideo extends EaseChatRowFile{
                         return null;
                     }
                 }
-                
+
                 @Override
                 protected void onPostExecute(Bitmap result) {
                     super.onPostExecute(result);
@@ -166,9 +164,8 @@ public class EaseChatRowVideo extends EaseChatRowFile{
                 }
             }.execute();
         }
-        
+
     }
-    
-    
+
 
 }

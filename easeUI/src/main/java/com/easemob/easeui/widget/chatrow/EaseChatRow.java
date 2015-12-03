@@ -1,7 +1,5 @@
 package com.easemob.easeui.widget.chatrow;
 
-import java.util.Date;
-
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -24,6 +22,8 @@ import com.easemob.easeui.utils.EaseUserUtils;
 import com.easemob.easeui.widget.EaseChatMessageList;
 import com.easemob.easeui.widget.EaseChatMessageList.MessageListItemClickListener;
 import com.easemob.util.DateUtils;
+
+import java.util.Date;
 
 public abstract class EaseChatRow extends LinearLayout {
     protected static final String TAG = EaseChatRow.class.getSimpleName();
@@ -81,12 +81,12 @@ public abstract class EaseChatRow extends LinearLayout {
 
     /**
      * 根据当前message和position设置控件属性等
-     * 
+     *
      * @param message
      * @param position
      */
     public void setUpView(EMMessage message, int position,
-            EaseChatMessageList.MessageListItemClickListener itemClickListener) {
+                          EaseChatMessageList.MessageListItemClickListener itemClickListener) {
         this.message = message;
         this.position = position;
         this.itemClickListener = itemClickListener;
@@ -115,24 +115,24 @@ public abstract class EaseChatRow extends LinearLayout {
             }
         }
         //设置头像和nick
-        if(message.direct == Direct.SEND){
+        if (message.direct == Direct.SEND) {
             EaseUserUtils.setUserAvatar(context, EMChatManager.getInstance().getCurrentUser(), userAvatarView);
             //发送方不显示nick
 //            UserUtils.setUserNick(EMChatManager.getInstance().getCurrentUser(), usernickView);
-        }else{
+        } else {
             EaseUserUtils.setUserAvatar(context, message.getFrom(), userAvatarView);
             EaseUserUtils.setUserNick(message.getFrom(), usernickView);
         }
-        
-        if(deliveredView != null){
+
+        if (deliveredView != null) {
             if (message.isDelivered) {
                 deliveredView.setVisibility(View.VISIBLE);
             } else {
                 deliveredView.setVisibility(View.INVISIBLE);
             }
         }
-        
-        if(ackedView != null){
+
+        if (ackedView != null) {
             if (message.isAcked) {
                 if (deliveredView != null) {
                     deliveredView.setVisibility(View.INVISIBLE);
@@ -142,7 +142,7 @@ public abstract class EaseChatRow extends LinearLayout {
                 ackedView.setVisibility(View.INVISIBLE);
             }
         }
-        
+
 
         if (adapter instanceof EaseMessageAdapter) {
             if (((EaseMessageAdapter) adapter).isShowAvatar())
@@ -172,27 +172,27 @@ public abstract class EaseChatRow extends LinearLayout {
     /**
      * 设置消息发送callback
      */
-    protected void setMessageSendCallback(){
-        if(messageSendCallback == null){
+    protected void setMessageSendCallback() {
+        if (messageSendCallback == null) {
             messageSendCallback = new EMCallBack() {
-                
+
                 @Override
                 public void onSuccess() {
                     updateView();
                 }
-                
+
                 @Override
                 public void onProgress(final int progress, String status) {
                     activity.runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            if(percentageView != null)
+                            if (percentageView != null)
                                 percentageView.setText(progress + "%");
 
                         }
                     });
                 }
-                
+
                 @Override
                 public void onError(int code, String error) {
                     updateView();
@@ -201,30 +201,30 @@ public abstract class EaseChatRow extends LinearLayout {
         }
         message.setMessageStatusCallback(messageSendCallback);
     }
-    
+
     /**
      * 设置消息接收callback
      */
-    protected void setMessageReceiveCallback(){
-        if(messageReceiveCallback == null){
+    protected void setMessageReceiveCallback() {
+        if (messageReceiveCallback == null) {
             messageReceiveCallback = new EMCallBack() {
-                
+
                 @Override
                 public void onSuccess() {
                     updateView();
                 }
-                
+
                 @Override
                 public void onProgress(final int progress, String status) {
                     activity.runOnUiThread(new Runnable() {
                         public void run() {
-                            if(percentageView != null){
+                            if (percentageView != null) {
                                 percentageView.setText(progress + "%");
                             }
                         }
                     });
                 }
-                
+
                 @Override
                 public void onError(int code, String error) {
                     updateView();
@@ -233,25 +233,25 @@ public abstract class EaseChatRow extends LinearLayout {
         }
         message.setMessageStatusCallback(messageReceiveCallback);
     }
-    
-    
+
+
     private void setClickListener() {
-        if(bubbleLayout != null){
+        if (bubbleLayout != null) {
             bubbleLayout.setOnClickListener(new OnClickListener() {
-    
+
                 @Override
                 public void onClick(View v) {
-                    if (itemClickListener != null){
-                        if(!itemClickListener.onBubbleClick(message)){
+                    if (itemClickListener != null) {
+                        if (!itemClickListener.onBubbleClick(message)) {
                             //如果listener返回false不处理这个事件，执行lib默认的处理
                             onBubbleClick();
                         }
                     }
                 }
             });
-    
+
             bubbleLayout.setOnLongClickListener(new OnLongClickListener() {
-    
+
                 @Override
                 public boolean onLongClick(View v) {
                     if (itemClickListener != null) {
@@ -296,11 +296,11 @@ public abstract class EaseChatRow extends LinearLayout {
                 if (message.status == EMMessage.Status.FAIL) {
 
                     if (message.getError() == EMError.MESSAGE_SEND_INVALID_CONTENT) {
-                        Toast.makeText(activity,activity.getString(R.string.send_fail) + activity.getString(R.string.error_send_invalid_content), 0).show();
+                        Toast.makeText(activity, activity.getString(R.string.send_fail) + activity.getString(R.string.error_send_invalid_content), 0).show();
                     } else if (message.getError() == EMError.MESSAGE_SEND_NOT_IN_THE_GROUP) {
-                        Toast.makeText(activity,activity.getString(R.string.send_fail) + activity.getString(R.string.error_send_not_in_the_group), 0).show();
+                        Toast.makeText(activity, activity.getString(R.string.send_fail) + activity.getString(R.string.error_send_not_in_the_group), 0).show();
                     } else {
-                        Toast.makeText(activity,activity.getString(R.string.send_fail) + activity.getString(R.string.connect_failuer_toast), 0).show();
+                        Toast.makeText(activity, activity.getString(R.string.send_fail) + activity.getString(R.string.connect_failuer_toast), 0).show();
                     }
                 }
 
@@ -329,7 +329,7 @@ public abstract class EaseChatRow extends LinearLayout {
      * 设置更新控件属性
      */
     protected abstract void onSetUpView();
-    
+
     /**
      * 聊天气泡被点击事件
      */

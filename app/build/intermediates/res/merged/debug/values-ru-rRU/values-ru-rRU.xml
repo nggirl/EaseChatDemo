@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values-ru-rRU/em_strings.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="Application_and_notify">Заявки и уведомления</string>
     <string name="Current_version">Предыдущая версия</string>
     <string name="Empty_the_chat_record">Очистить историю чата</string>
@@ -52,8 +52,11 @@
     <string name="confirm_forward_to">Вы уверены, что Вы хотите переслать：%1$s ?</string>
     <string name="confirm_resend">Вы уверены, что хотите отправить сообщение еще раз?</string>
     <string name="confirmpassword">Подтвердить пароль</string>
-    <string name="connect_conflict">В данный момент эта уч.запись используется другим устройством</string>
-    <string name="connect_failuer_toast">Пожалуйста, проверьте соединение с интернетом либо попробуйте еще раз позже</string>
+    <string name="connect_conflict">В данный момент эта уч.запись используется другим устройством
+    </string>
+    <string name="connect_failuer_toast">Пожалуйста, проверьте соединение с интернетом либо
+        попробуйте еще раз позже
+    </string>
     <string name="copy">Копировать</string>
     <string name="copy_message">Копировать сообщение</string>
     <string name="delete">Удалить</string>
@@ -65,10 +68,10 @@
     <string name="dissolution_group_hint">Распускать чат при выходе из приложения</string>
     <string name="downwaiting">Документ загружается, пожалуйста подождите...</string>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/build/intermediates/exploded-aar/EaseChatDemo/easeUI/unspecified/res/values-ru-rRU/values-ru-rRU.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="ease_user_remove">Данный пользователь был удален</string>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values-ru-rRU/em_strings.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="em_user_remove">Данный пользователь был удален</string>
     <string name="exit_group">Выйти</string>
     <string name="exit_group_hint">Не получать сообщения при выходе из приложения</string>
@@ -83,11 +86,15 @@
     <string name="location_recv">[Местоположение%1$]</string>
     <string name="login">Войти</string>
     <string name="logout">Выйти</string>
-    <string name="logout_hint">Сохранять записи при выходе из приложения, для возвращения использовать ту же уч.запись</string>
+    <string name="logout_hint">Сохранять записи при выходе из приложения, для возвращения
+        использовать ту же уч.запись
+    </string>
     <string name="move_up_to_cancel">Провести вверх для отмены отправки</string>
     <string name="mute">Без звука</string>
     <string name="network_isnot_available">Сеть недоступна</string>
-    <string name="network_unavailable">Ошибка соединения, пожалуйста, проверьте Ваше соединение с интернетом.</string>
+    <string name="network_unavailable">Ошибка соединения, пожалуйста, проверьте Ваше соединение с
+        интернетом.
+    </string>
     <string name="newchat">Создать чат</string>
     <string name="newnotify">Посылать уведомление при получении сообщения</string>
     <string name="not_download">Не скачано:</string>

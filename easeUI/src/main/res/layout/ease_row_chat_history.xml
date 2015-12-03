@@ -2,17 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="59dp"
-     android:id="@+id/list_itease_layout"
-     android:background="#fff"
-    android:gravity="center_vertical" >
+    android:id="@+id/list_itease_layout"
+    android:background="#fff"
+    android:gravity="center_vertical">
 
     <RelativeLayout
         android:id="@+id/avatar_container"
         android:layout_width="59dp"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true" >
+        android:layout_alignParentLeft="true">
 
-      <ImageView
+        <ImageView
             android:id="@+id/avatar"
             android:layout_width="45dp"
             android:layout_height="45dp"

@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="60dp"
     android:background="@drawable/ease_mm_listitem"
-    android:gravity="center_vertical" >
+    android:gravity="center_vertical">
 
     <RelativeLayout
         android:id="@+id/rl_group"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/avatar"

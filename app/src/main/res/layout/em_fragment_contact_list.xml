@@ -19,13 +19,13 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
         <com.easemob.easeui.widget.EaseContactList
             android:id="@+id/contact_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-            <!-- easemob:ctsListInitialLetterBg="#abc" -->
+        <!-- easemob:ctsListInitialLetterBg="#abc" -->
 
         <LinearLayout
             android:id="@+id/progress_bar"
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:orientation="vertical"
-            android:visibility="gone" >
+            android:visibility="gone">
 
             <ProgressBar
                 android:layout_width="wrap_content"

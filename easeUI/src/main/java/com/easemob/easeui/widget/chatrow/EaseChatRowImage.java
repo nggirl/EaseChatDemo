@@ -1,7 +1,5 @@
 package com.easemob.easeui.widget.chatrow;
 
-import java.io.File;
-
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -22,7 +20,9 @@ import com.easemob.easeui.ui.EaseShowBigImageActivity;
 import com.easemob.easeui.utils.EaseCommonUtils;
 import com.easemob.easeui.utils.EaseImageUtils;
 
-public class EaseChatRowImage extends EaseChatRowFile{
+import java.io.File;
+
+public class EaseChatRowImage extends EaseChatRowFile {
 
     protected ImageView imageView;
     private ImageMessageBody imgBody;
@@ -42,7 +42,7 @@ public class EaseChatRowImage extends EaseChatRowFile{
         imageView = (ImageView) findViewById(R.id.image);
     }
 
-    
+
     @Override
     protected void onSetUpView() {
         imgBody = (ImageMessageBody) message.getBody();
@@ -66,19 +66,19 @@ public class EaseChatRowImage extends EaseChatRowFile{
             }
             return;
         }
-        
+
         String filePath = imgBody.getLocalUrl();
         if (filePath != null) {
             showImageView(EaseImageUtils.getThumbnailImagePath(filePath), imageView, filePath, message);
-        } 
+        }
         handleSendMessage();
     }
-    
+
     @Override
     protected void onUpdateView() {
         super.onUpdateView();
     }
-    
+
     @Override
     protected void onBubbleClick() {
         Intent intent = new Intent(context, EaseShowBigImageActivity.class);
@@ -104,16 +104,16 @@ public class EaseChatRowImage extends EaseChatRowFile{
         }
         context.startActivity(intent);
     }
-    
+
     /**
      * load image into image view
-     * 
+     *
      * @param thumbernailPath
      * @param iv
      * @param position
      * @return the image exists or not
      */
-    private boolean showImageView(final String thumbernailPath, final ImageView iv, final String localFullSizePath,final EMMessage message) {
+    private boolean showImageView(final String thumbernailPath, final ImageView iv, final String localFullSizePath, final EMMessage message) {
         // first check if the thumbnail image already loaded into cache
         Bitmap bitmap = EaseImageCache.getInstance().get(thumbernailPath);
         if (bitmap != null) {

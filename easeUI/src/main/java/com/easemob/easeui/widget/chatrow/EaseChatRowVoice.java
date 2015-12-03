@@ -12,7 +12,7 @@ import com.easemob.chat.VoiceMessageBody;
 import com.easemob.easeui.R;
 import com.easemob.util.EMLog;
 
-public class EaseChatRowVoice extends EaseChatRowFile{
+public class EaseChatRowVoice extends EaseChatRowFile {
 
     private ImageView voiceImageView;
     private TextView voiceLengthView;
@@ -39,10 +39,10 @@ public class EaseChatRowVoice extends EaseChatRowFile{
     protected void onSetUpView() {
         VoiceMessageBody voiceBody = (VoiceMessageBody) message.getBody();
         int len = voiceBody.getLength();
-        if(len>0){
+        if (len > 0) {
             voiceLengthView.setText(voiceBody.getLength() + "\"");
             voiceLengthView.setVisibility(View.VISIBLE);
-        }else{
+        } else {
             voiceLengthView.setVisibility(View.INVISIBLE);
         }
         if (EaseChatRowVoicePlayClickListener.playMsgId != null
@@ -62,7 +62,7 @@ public class EaseChatRowVoice extends EaseChatRowFile{
                 voiceImageView.setImageResource(R.drawable.ease_chatto_voice_playing);
             }
         }
-        
+
         if (message.direct == EMMessage.Direct.RECEIVE) {
             if (message.isListened()) {
                 // 隐藏语音未听标志
@@ -94,7 +94,7 @@ public class EaseChatRowVoice extends EaseChatRowFile{
     protected void onBubbleClick() {
         new EaseChatRowVoicePlayClickListener(message, voiceImageView, readStutausView, adapter, activity).onClick(bubbleLayout);
     }
-    
+
     @Override
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
@@ -103,5 +103,5 @@ public class EaseChatRowVoice extends EaseChatRowFile{
             EaseChatRowVoicePlayClickListener.currentPlayListener.stopPlayVoice();
         }
     }
-    
+
 }

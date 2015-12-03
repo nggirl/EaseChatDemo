@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values/em_colors.xml -->
-    <eat-comment/>
+    <eat-comment />
     <color name="black_deep">#FF000000</color>
     <color name="bottom_bar_normal_bg">#2D2F31</color>
     <color name="bottom_text_color_normal">#ffffff</color>
@@ -30,11 +30,11 @@
     <color name="common_top_bar_blue">#4ebcd3</color>
     <color name="divider_list">#d4d4d4</color>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/build/intermediates/exploded-aar/EaseChatDemo/easeUI/unspecified/res/values/values.xml -->
-    <eat-comment/>
+    <eat-comment />
     <color name="emojicon_tab_nomal">#ffffff</color>
     <color name="emojicon_tab_selected">#D9D9D9</color>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values/em_colors.xml -->
-    <eat-comment/>
+    <eat-comment />
     <color name="error_item_color">#F6EBE6</color>
     <color name="gray_normal">#666667</color>
     <color name="gray_pressed">#b5b5b6</color>
@@ -45,31 +45,69 @@
     <color name="holo_orange_light">#ffffbb33</color>
     <color name="holo_red_light">#ffff4444</color>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/build/intermediates/exploded-aar/EaseChatDemo/easeUI/unspecified/res/values/values.xml -->
-    <eat-comment/>
+    <eat-comment />
     <color name="list_itease_primary_color">#000</color>
     <color name="list_itease_secondary_color">#888888</color>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values/em_colors.xml -->
-    <eat-comment/>
+    <eat-comment />
     <color name="list_item_primary_color">#000</color>
     <color name="list_item_secondary_color">#888888</color>
     <color name="orange">#FFA500</color>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values/tb_munion_strings.xml -->
-    <eat-comment/>
+    <eat-comment />
     <color name="tb_munion_item_force">#e3e3e3</color>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values/em_colors.xml -->
-    <eat-comment/>
+    <eat-comment />
     <color name="top_bar_normal_bg">#00acff</color>
     <color name="voip_interface_text_color">#bababa</color>
-    <declare-styleable name="ContactItemView"><attr format="reference" name="contactItemImage"/><attr format="string" name="contactItemName"/></declare-styleable>
-    <declare-styleable name="EaseChatExtendMenu"><attr format="integer" name="numColumns"/></declare-styleable>
-    <declare-styleable name="EaseChatMessageList"><attr format="reference" name="msgListMyBubbleBackground"/><attr format="reference" name="msgListOtherBubbleBackground"/><attr format="boolean" name="msgListShowUserAvatar"/><attr format="boolean" name="msgListShowUserNick"/></declare-styleable>
-    <declare-styleable name="EaseContactList"><attr format="color" name="ctsListPrimaryTextColor"/><attr format="dimension" name="ctsListPrimaryTextSize"/><attr format="boolean" name="ctsListShowSiderBar"/><attr format="reference|color" name="ctsListInitialLetterBg"/><attr format="color" name="ctsListInitialLetterColor"/></declare-styleable>
-    <declare-styleable name="EaseConversationList"><attr format="color" name="cvsListPrimaryTextColor"/><attr format="color" name="cvsListSecondaryTextColor"/><attr format="color" name="cvsListTimeTextColor"/><attr format="dimension" name="cvsListPrimaryTextSize"/><attr format="dimension" name="cvsListSecondaryTextSize"/><attr format="dimension" name="cvsListTimeTextSize"/></declare-styleable>
-    <declare-styleable name="EaseEmojiconMenu"><attr format="integer" name="bigEmojiconRows"/><attr format="integer" name="emojiconColumns"/></declare-styleable>
-    <declare-styleable name="EaseSwitchButton"><attr format="reference" name="switchOpenImage"/><attr format="reference" name="switchCloseImage"/><attr name="switchStatus"><enum name="open" value="0"/><enum name="close" value="1"/></attr></declare-styleable>
-    <declare-styleable name="EaseTitleBar"><attr format="string" name="titleBarTitle"/><attr format="reference" name="titleBarLeftImage"/><attr format="reference" name="titleBarRightImage"/><attr format="reference|color" name="titleBarBackground"/></declare-styleable>
+    <declare-styleable name="ContactItemView">
+        <attr format="reference" name="contactItemImage" />
+        <attr format="string" name="contactItemName" />
+    </declare-styleable>
+    <declare-styleable name="EaseChatExtendMenu">
+        <attr format="integer" name="numColumns" />
+    </declare-styleable>
+    <declare-styleable name="EaseChatMessageList">
+        <attr format="reference" name="msgListMyBubbleBackground" />
+        <attr format="reference" name="msgListOtherBubbleBackground" />
+        <attr format="boolean" name="msgListShowUserAvatar" />
+        <attr format="boolean" name="msgListShowUserNick" />
+    </declare-styleable>
+    <declare-styleable name="EaseContactList">
+        <attr format="color" name="ctsListPrimaryTextColor" />
+        <attr format="dimension" name="ctsListPrimaryTextSize" />
+        <attr format="boolean" name="ctsListShowSiderBar" />
+        <attr format="reference|color" name="ctsListInitialLetterBg" />
+        <attr format="color" name="ctsListInitialLetterColor" />
+    </declare-styleable>
+    <declare-styleable name="EaseConversationList">
+        <attr format="color" name="cvsListPrimaryTextColor" />
+        <attr format="color" name="cvsListSecondaryTextColor" />
+        <attr format="color" name="cvsListTimeTextColor" />
+        <attr format="dimension" name="cvsListPrimaryTextSize" />
+        <attr format="dimension" name="cvsListSecondaryTextSize" />
+        <attr format="dimension" name="cvsListTimeTextSize" />
+    </declare-styleable>
+    <declare-styleable name="EaseEmojiconMenu">
+        <attr format="integer" name="bigEmojiconRows" />
+        <attr format="integer" name="emojiconColumns" />
+    </declare-styleable>
+    <declare-styleable name="EaseSwitchButton">
+        <attr format="reference" name="switchOpenImage" />
+        <attr format="reference" name="switchCloseImage" />
+        <attr name="switchStatus">
+            <enum name="open" value="0" />
+            <enum name="close" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="EaseTitleBar">
+        <attr format="string" name="titleBarTitle" />
+        <attr format="reference" name="titleBarLeftImage" />
+        <attr format="reference" name="titleBarRightImage" />
+        <attr format="reference|color" name="titleBarBackground" />
+    </declare-styleable>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values/em_dimens.xml -->
-    <eat-comment/>
+    <eat-comment />
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="call_button_padding_left">25dp</dimen>
@@ -77,10 +115,10 @@
     <dimen name="call_button_padding_vertical">10dp</dimen>
     <dimen name="chat_nick_margin_left">17dp</dimen>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/build/intermediates/exploded-aar/EaseChatDemo/easeUI/unspecified/res/values/values.xml -->
-    <eat-comment/>
+    <eat-comment />
     <dimen name="chat_nick_text_size">13sp</dimen>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values/em_dimens.xml -->
-    <eat-comment/>
+    <eat-comment />
     <dimen name="field_margin_right">5dp</dimen>
     <dimen name="field_textsize">14sp</dimen>
     <dimen name="height_row_weixin">59dp</dimen>
@@ -92,7 +130,7 @@
     <dimen name="sidebar_text_size">10dp</dimen>
     <dimen name="size_avatar">48dp</dimen>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values/em_strings.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="Add_a_button_was_clicked">Add a button was clicked</string>
     <string name="Add_a_friend">Let me to be your friend!</string>
     <string name="Add_group_members_fail">Add group members fail:</string>
@@ -138,7 +176,7 @@
     <string name="In_the_call">In the call..</string>
     <string name="Into_the_blacklist">Move to the blacklist?</string>
     <string name="Introduction">Brief</string>
-    <string name="Invite_you_to_join_a_group_chat"> Invite you to join this group</string>
+    <string name="Invite_you_to_join_a_group_chat">Invite you to join this group</string>
     <string name="Is_download_voice_click_later">Downloading the voice message, click later</string>
     <string name="Is_landing">logining..</string>
     <string name="Is_moved_into_blacklist">Moving to blacklist..</string>
@@ -187,7 +225,8 @@
     <string name="The_other_party_did_not_answer">The peer did not answer</string>
     <string name="The_other_party_did_not_answer_new">The peer did not answer</string>
     <string name="The_other_party_has_refused_to">Call was refused</string>
-    <string name="The_other_party_is_not_online">The peer is not online now, please try later</string>
+    <string name="The_other_party_is_not_online">The peer is not online now, please try later
+    </string>
     <string name="The_other_party_refused_to_accept">The call was refused</string>
     <string name="The_recording_time_is_too_short">The recording time is too short</string>
     <string name="The_video_to_start">The video to start</string>
@@ -195,23 +234,25 @@
     <string name="To_join_the_chat">Join the group</string>
     <string name="Two_input_password">Inconsistent password, please enter again!</string>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values/umeng_update_string.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="UMAppUpdate">App updating</string>
-    <string name="UMBreak_Network">Please make sure you are connected to internet,update failed</string>
-    <string name="UMDialog_InstallAPK">The lastest version has been downloaded, install now ?</string>
+    <string name="UMBreak_Network">Please make sure you are connected to internet,update failed
+    </string>
+    <string name="UMDialog_InstallAPK">The lastest version has been downloaded, install now ?
+    </string>
     <string name="UMGprsCondition">(Warning: Not WIFI Condition)</string>
     <string name="UMIgnore">Ingore this</string>
-    <string name="UMNewVersion">Latest version: </string>
+    <string name="UMNewVersion">Latest version:</string>
     <string name="UMNotNow">Not now</string>
-    <string name="UMTargetSize">Target size: </string>
+    <string name="UMTargetSize">Target size:</string>
     <string name="UMToast_IsUpdating">Updating....</string>
     <string name="UMUpdateCheck">2.6.0.1.20150312</string>
     <string name="UMUpdateContent">Update Content</string>
     <string name="UMUpdateNow">Update now</string>
-    <string name="UMUpdateSize">Update size: </string>
+    <string name="UMUpdateSize">Update size:</string>
     <string name="UMUpdateTitle">New version found</string>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values/em_strings.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="Upload_the_log">Uploading the log</string>
     <string name="User_already_exists">User already existed!</string>
     <string name="User_name_cannot_be_empty">User name cannot be empty!</string>
@@ -253,7 +294,9 @@
     <string name="can_not_connect_chat_server_connection">Cannot connect to server</string>
     <string name="cancel">Cancel</string>
     <string name="cant_find_pictures">"Can't find pictures"</string>
-    <string name="change_the_group_name_failed_please">Failed to change the group name, please check the network or try again later</string>
+    <string name="change_the_group_name_failed_please">Failed to change the group name, please check
+        the network or try again later
+    </string>
     <string name="chat_room">Chat room</string>
     <string name="chatroom_allow_owner_leave">Allow chatroom owner leave</string>
     <string name="chatset">Chat settings</string>
@@ -290,22 +333,30 @@
     <string name="dl_waiting">waiting...</string>
     <string name="downwaiting">Downloading the file, please try again later</string>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/build/intermediates/exploded-aar/EaseChatDemo/easeUI/unspecified/res/values/values.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="dynamic_expression">[Dynamic expression]</string>
     <string name="ease_user_remove">This user has been removed</string>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values/em_strings.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="em_user_remove">This user has been removed</string>
-    <string name="error_send_invalid_content">The message content is not allowed to be sent!</string>
+    <string name="error_send_invalid_content">The message content is not allowed to be sent!
+    </string>
     <string name="error_send_not_in_the_group">You already were not in the group</string>
     <string name="exit_group">Exit</string>
-    <string name="exit_group_hint">The group messages will not be received after exiting the group</string>
+    <string name="exit_group_hint">The group messages will not be received after exiting the group
+    </string>
     <string name="expression">[expression]</string>
-    <string name="failed_to_load_data">Failed to load data, please check network or try again later</string>
-    <string name="failed_to_move_into">Failed to move to the blacklist, please check the network or try again later</string>
+    <string name="failed_to_load_data">Failed to load data, please check network or try again
+        later
+    </string>
+    <string name="failed_to_move_into">Failed to move to the blacklist, please check the network or
+        try again later
+    </string>
     <string name="file">[file]</string>
     <string name="forward">Forward</string>
-    <string name="get_failed_please_check">Failed to retrieve, please check the network or try again later</string>
+    <string name="get_failed_please_check">Failed to retrieve, please check the network or try again
+        later
+    </string>
     <string name="gorup_not_found">Can not find this group</string>
     <string name="group_chat">Group chat</string>
     <string name="group_id">Group ID</string>
@@ -313,12 +364,15 @@
     <string name="group_name">Group name</string>
     <string name="group_nick">Group Nick:</string>
     <string name="group_not_existed">The group does not exist</string>
-    <string name="group_of_shielding">Group of shielding failure, please check the network or try again later</string>
+    <string name="group_of_shielding">Group of shielding failure, please check the network or try
+        again later
+    </string>
     <string name="group_owner">Group Owner:</string>
     <string name="group_search_failed">Search failed</string>
     <string name="hang_up">Hang up</string>
     <string name="hanging_up">Hanging up..</string>
-    <string name="have_connected_with">Connected to the peer and waiting for the peer to accept</string>
+    <string name="have_connected_with">Connected to the peer and waiting for the peer to accept
+    </string>
     <string name="have_you_removed">Have you removed from his buddy list</string>
     <string name="illegal_user_name">Illegal user name</string>
     <string name="input_new_nick_hint">Input a new nick</string>
@@ -331,20 +385,27 @@
     <string name="location_prefix">[my location]</string>
     <string name="location_recv">[%1$s location]</string>
     <string name="login">Login</string>
-    <string name="login_failure_failed">Logon failure: failed to retrieve contacts or groups</string>
+    <string name="login_failure_failed">Logon failure: failed to retrieve contacts or groups
+    </string>
     <string name="logout">Logout</string>
-    <string name="logout_hint">Logout will never clear the chat history, this account can be used on next login</string>
+    <string name="logout_hint">Logout will never clear the chat history, this account can be used on
+        next login
+    </string>
     <string name="messages_are_empty">Messages has been cleared</string>
     <string name="move_out_backlist">Remove from blacklist</string>
     <string name="move_up_to_cancel">Finger up to cancel sending</string>
     <string name="mute">Mute</string>
     <string name="network_anomalies">Network is not available, please check the network!</string>
     <string name="network_isnot_available">The network is not available</string>
-    <string name="network_unavailable">The network connection is not available, please check the network</string>
+    <string name="network_unavailable">The network connection is not available, please check the
+        network
+    </string>
     <string name="newchat">Create new group</string>
     <string name="newnotify">Receiving a new message</string>
     <string name="nickname">NickName</string>
-    <string name="nickname_description">Once this nick is set, this nick will be used in push notification (by default this is HuanXin ID ) when the receiver is using the IOS device.</string>
+    <string name="nickname_description">Once this nick is set, this nick will be used in push
+        notification (by default this is HuanXin ID ) when the receiver is using the IOS device.
+    </string>
     <string name="no_more_messages">no more messages</string>
     <string name="not_add_myself">"Can't add myself"</string>
     <string name="not_connect_to_server">Not connect to server, please try again later</string>
@@ -356,8 +417,12 @@
     <string name="password">Password</string>
     <string name="people">people</string>
     <string name="picture">[Picture]</string>
-    <string name="please_check">key validation error!Please on AndroidManifest.xml file check the key set</string>
-    <string name="please_set_the_current">"Please set the current user's nickname \ n to ios offline push not userid but Nick, see comments"</string>
+    <string name="please_check">key validation error!Please on AndroidManifest.xml file check the
+        key set
+    </string>
+    <string name="please_set_the_current">"Please set the current user's nickname \ n to ios offline
+        push not userid but Nick, see comments"
+    </string>
     <string name="prompt">Prompt</string>
     <string name="push_nick">IOS offline push nick</string>
     <string name="receive_the_passthrough">Receive cmd message : action：</string>
@@ -365,10 +430,13 @@
     <string name="recording_video">Record video</string>
     <string name="refreshing_group_list">Refreshing group list</string>
     <string name="register">Register</string>
-    <string name="registration_failed_without_permission">Registration failed, without permission!</string>
+    <string name="registration_failed_without_permission">Registration failed, without permission!
+    </string>
     <string name="relay_call">Relay</string>
     <string name="release_to_cancel">Finger release to cancel sending</string>
-    <string name="remove_group_of">Remove group of shielding failure, please check the network or try again later</string>
+    <string name="remove_group_of">Remove group of shielding failure, please check the network or
+        try again later
+    </string>
     <string name="resend">Resend</string>
     <string name="robot_chat">Robot chat</string>
     <string name="save">Save</string>
@@ -381,7 +449,8 @@
     <string name="searching">searching</string>
     <string name="select_contacts">Select the contact</string>
     <string name="send_fail">Send failed</string>
-    <string name="send_failure_please">Send failure, please test whether the server connection</string>
+    <string name="send_failure_please">Send failure, please test whether the server connection
+    </string>
     <string name="send_successful">Request was sent, waiting for the peer to accept</string>
     <string name="send_the_request_is">The request was sent and waiting for owner approval</string>
     <string name="session">Conversation</string>
@@ -391,15 +460,18 @@
     <string name="shake">Shake</string>
     <string name="sure_to_empty_this">Clear all messages?</string>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values/tb_munion_strings.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="tb_munion_tip_download_prefix">正在下载:</string>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values/em_strings.xml -->
-    <eat-comment/>
-    <string name="temporary_does_not">Currently the video size greater than 10M is not supported!</string>
+    <eat-comment />
+    <string name="temporary_does_not">Currently the video size greater than 10M is not supported!
+    </string>
     <string name="text_ack_msg">Read</string>
     <string name="text_delivered_msg">Delivered</string>
     <string name="the_current_group">The current group has been dismissed</string>
-    <string name="the_current_network">The current network is not available, please check the network Settings</string>
+    <string name="the_current_network">The current network is not available, please check the
+        network Settings
+    </string>
     <string name="title_user_profile">User Profile</string>
     <string name="toast_nick_not_isnull">nick cannot be empty!</string>
     <string name="toast_no_support">No Support!</string>
@@ -408,41 +480,46 @@
     <string name="toast_updatephoto_fail">update photo fail!</string>
     <string name="toast_updatephoto_success">update photo success!</string>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values/umeng_common_strings.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="umeng_common_action_cancel">Cancel</string>
     <string name="umeng_common_action_continue">Continue</string>
     <string name="umeng_common_action_info_exist">The app is already in downloading list.</string>
     <string name="umeng_common_action_pause">Pause</string>
-    <string name="umeng_common_download_failed">Download Failed! </string>
+    <string name="umeng_common_download_failed">Download Failed!</string>
     <string name="umeng_common_download_finish">Download finished,click to install it.</string>
-    <string name="umeng_common_download_notification_prefix">Downloading: </string>
+    <string name="umeng_common_download_notification_prefix">Downloading:</string>
     <string name="umeng_common_icon">icon</string>
     <string name="umeng_common_info_interrupt">dowload interrupted.</string>
-    <string name="umeng_common_network_break_alert">Please make sure you are connected to internet, download failed</string>
+    <string name="umeng_common_network_break_alert">Please make sure you are connected to internet,
+        download failed
+    </string>
     <string name="umeng_common_patch_finish">Patch finished,click to install it.</string>
-    <string name="umeng_common_pause_notification_prefix">Pause: </string>
-    <string name="umeng_common_silent_download_finish">New version is ready,click to install it.</string>
+    <string name="umeng_common_pause_notification_prefix">Pause:</string>
+    <string name="umeng_common_silent_download_finish">New version is ready,click to install it.
+    </string>
     <string name="umeng_common_start_download_notification">Download start.</string>
     <string name="umeng_common_start_patch_notification">Patch start.</string>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values/em_strings.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="unable_to_connect">Unable to connect to the server</string>
     <string name="unable_to_get_loaction">Unable to get to your location information!</string>
-    <string name="user_already_in_contactlist">This user already is your friend, only need remove out from the black list</string>
+    <string name="user_already_in_contactlist">This user already is your friend, only need remove
+        out from the black list
+    </string>
     <string name="user_card">Business card</string>
     <string name="user_name">User name</string>
     <string name="video">[Video]</string>
     <string name="voice">Voice</string>
     <string name="voice_call">[Voice call]</string>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/build/intermediates/exploded-aar/EaseChatDemo/easeUI/unspecified/res/values/values.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="voice_prefix">[Voice]</string>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values/em_strings.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="yangshengqi">Use speaker</string>
     <string name="you_are_group">You have been kicked off from the group</string>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/build/intermediates/exploded-aar/EaseChatDemo/easeUI/unspecified/res/values/values.xml -->
-    <eat-comment/>
+    <eat-comment />
     <style name="AnimBottom" parent="@android:style/Animation">
         <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
         <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
@@ -476,7 +553,7 @@
     <style name="Anim_style2" parent="android:Theme.NoTitleBar">
         <item name="android:windowAnimationStyle">@style/AnimFade</item>
     </style>
-    <style name="AppTheme" parent="android:Theme.Light"/>
+    <style name="AppTheme" parent="android:Theme.Light" />
     <style name="HeadScale" parent="android:Theme.Dialog">
         <item name="android:windowAnimationStyle">@style/AnimHead</item>
         <item name="android:windowFrame">@null</item>
@@ -577,5 +654,5 @@
     <style name="horizontal_slide" parent="android:Theme.NoTitleBar">
         <item name="android:windowAnimationStyle">@style/AnimFade2</item>
     </style>
-    <style name="nornal_style" parent="android:Theme.NoTitleBar"/>
+    <style name="nornal_style" parent="android:Theme.NoTitleBar" />
 </resources>

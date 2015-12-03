@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/values/ease_colors.xml -->
-    <eat-comment/>
+    <eat-comment />
     <color name="black_deep">#FF000000</color>
     <color name="bottom_bar_normal_bg">#2D2F31</color>
     <color name="bottom_text_color_normal">#ffffff</color>
@@ -45,15 +45,50 @@
     <color name="orange">#FFA500</color>
     <color name="top_bar_normal_bg">#00acff</color>
     <color name="voip_interface_text_color">#bababa</color>
-    <declare-styleable name="EaseChatExtendMenu"><attr format="integer" name="numColumns"/></declare-styleable>
-    <declare-styleable name="EaseChatMessageList"><attr format="reference" name="msgListMyBubbleBackground"/><attr format="reference" name="msgListOtherBubbleBackground"/><attr format="boolean" name="msgListShowUserAvatar"/><attr format="boolean" name="msgListShowUserNick"/></declare-styleable>
-    <declare-styleable name="EaseContactList"><attr format="color" name="ctsListPrimaryTextColor"/><attr format="dimension" name="ctsListPrimaryTextSize"/><attr format="boolean" name="ctsListShowSiderBar"/><attr format="reference|color" name="ctsListInitialLetterBg"/><attr format="color" name="ctsListInitialLetterColor"/></declare-styleable>
-    <declare-styleable name="EaseConversationList"><attr format="color" name="cvsListPrimaryTextColor"/><attr format="color" name="cvsListSecondaryTextColor"/><attr format="color" name="cvsListTimeTextColor"/><attr format="dimension" name="cvsListPrimaryTextSize"/><attr format="dimension" name="cvsListSecondaryTextSize"/><attr format="dimension" name="cvsListTimeTextSize"/></declare-styleable>
-    <declare-styleable name="EaseEmojiconMenu"><attr format="integer" name="bigEmojiconRows"/><attr format="integer" name="emojiconColumns"/></declare-styleable>
-    <declare-styleable name="EaseSwitchButton"><attr format="reference" name="switchOpenImage"/><attr format="reference" name="switchCloseImage"/><attr name="switchStatus"><enum name="open" value="0"/><enum name="close" value="1"/></attr></declare-styleable>
-    <declare-styleable name="EaseTitleBar"><attr format="string" name="titleBarTitle"/><attr format="reference" name="titleBarLeftImage"/><attr format="reference" name="titleBarRightImage"/><attr format="reference|color" name="titleBarBackground"/></declare-styleable>
+    <declare-styleable name="EaseChatExtendMenu">
+        <attr format="integer" name="numColumns" />
+    </declare-styleable>
+    <declare-styleable name="EaseChatMessageList">
+        <attr format="reference" name="msgListMyBubbleBackground" />
+        <attr format="reference" name="msgListOtherBubbleBackground" />
+        <attr format="boolean" name="msgListShowUserAvatar" />
+        <attr format="boolean" name="msgListShowUserNick" />
+    </declare-styleable>
+    <declare-styleable name="EaseContactList">
+        <attr format="color" name="ctsListPrimaryTextColor" />
+        <attr format="dimension" name="ctsListPrimaryTextSize" />
+        <attr format="boolean" name="ctsListShowSiderBar" />
+        <attr format="reference|color" name="ctsListInitialLetterBg" />
+        <attr format="color" name="ctsListInitialLetterColor" />
+    </declare-styleable>
+    <declare-styleable name="EaseConversationList">
+        <attr format="color" name="cvsListPrimaryTextColor" />
+        <attr format="color" name="cvsListSecondaryTextColor" />
+        <attr format="color" name="cvsListTimeTextColor" />
+        <attr format="dimension" name="cvsListPrimaryTextSize" />
+        <attr format="dimension" name="cvsListSecondaryTextSize" />
+        <attr format="dimension" name="cvsListTimeTextSize" />
+    </declare-styleable>
+    <declare-styleable name="EaseEmojiconMenu">
+        <attr format="integer" name="bigEmojiconRows" />
+        <attr format="integer" name="emojiconColumns" />
+    </declare-styleable>
+    <declare-styleable name="EaseSwitchButton">
+        <attr format="reference" name="switchOpenImage" />
+        <attr format="reference" name="switchCloseImage" />
+        <attr name="switchStatus">
+            <enum name="open" value="0" />
+            <enum name="close" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="EaseTitleBar">
+        <attr format="string" name="titleBarTitle" />
+        <attr format="reference" name="titleBarLeftImage" />
+        <attr format="reference" name="titleBarRightImage" />
+        <attr format="reference|color" name="titleBarBackground" />
+    </declare-styleable>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/values/ease_dimens.xml -->
-    <eat-comment/>
+    <eat-comment />
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="call_button_padding_left">25dp</dimen>
@@ -72,7 +107,7 @@
     <dimen name="sidebar_text_size">10dp</dimen>
     <dimen name="size_avatar">48dp</dimen>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/values/ease_strings.xml -->
-    <eat-comment/>
+    <eat-comment />
     <string name="Add_a_button_was_clicked">Add a button was clicked</string>
     <string name="Add_a_friend">Let me to be your friend!</string>
     <string name="Add_group_members_fail">Add group members fail:</string>
@@ -118,7 +153,7 @@
     <string name="In_the_call">In the call..</string>
     <string name="Into_the_blacklist">Move to the blacklist?</string>
     <string name="Introduction">Brief</string>
-    <string name="Invite_you_to_join_a_group_chat"> Invite you to join this group</string>
+    <string name="Invite_you_to_join_a_group_chat">Invite you to join this group</string>
     <string name="Is_download_voice_click_later">Downloading the voice message, click later</string>
     <string name="Is_landing">logining..</string>
     <string name="Is_moved_into_blacklist">Moving to blacklist..</string>
@@ -167,7 +202,8 @@
     <string name="The_other_party_did_not_answer">The peer did not answer</string>
     <string name="The_other_party_did_not_answer_new">The peer did not answer</string>
     <string name="The_other_party_has_refused_to">Call was refused</string>
-    <string name="The_other_party_is_not_online">The peer is not online now, please try later</string>
+    <string name="The_other_party_is_not_online">The peer is not online now, please try later
+    </string>
     <string name="The_other_party_refused_to_accept">The call was refused</string>
     <string name="The_recording_time_is_too_short">The recording time is too short</string>
     <string name="The_video_to_start">The video to start</string>
@@ -214,7 +250,9 @@
     <string name="can_not_connect_chat_server_connection">Cannot connect to server</string>
     <string name="cancel">Cancel</string>
     <string name="cant_find_pictures">"Can't find pictures"</string>
-    <string name="change_the_group_name_failed_please">Failed to change the group name, please check the network or try again later</string>
+    <string name="change_the_group_name_failed_please">Failed to change the group name, please check
+        the network or try again later
+    </string>
     <string name="chat_room">Chat room</string>
     <string name="chatroom_allow_owner_leave">Allow chatroom owner leave</string>
     <string name="chatset">Chat settings</string>
@@ -252,27 +290,38 @@
     <string name="downwaiting">Downloading the file, please try again later</string>
     <string name="dynamic_expression">[Dynamic expression]</string>
     <string name="ease_user_remove">This user has been removed</string>
-    <string name="error_send_invalid_content">The message content is not allowed to be sent!</string>
+    <string name="error_send_invalid_content">The message content is not allowed to be sent!
+    </string>
     <string name="error_send_not_in_the_group">You already were not in the group</string>
     <string name="exit_group">Exit</string>
-    <string name="exit_group_hint">The group messages will not be received after exiting the group</string>
+    <string name="exit_group_hint">The group messages will not be received after exiting the group
+    </string>
     <string name="expression">[expression]</string>
-    <string name="failed_to_load_data">Failed to load data, please check network or try again later</string>
-    <string name="failed_to_move_into">Failed to move to the blacklist, please check the network or try again later</string>
+    <string name="failed_to_load_data">Failed to load data, please check network or try again
+        later
+    </string>
+    <string name="failed_to_move_into">Failed to move to the blacklist, please check the network or
+        try again later
+    </string>
     <string name="file">[file]</string>
     <string name="forward">Forward</string>
-    <string name="get_failed_please_check">Failed to retrieve, please check the network or try again later</string>
+    <string name="get_failed_please_check">Failed to retrieve, please check the network or try again
+        later
+    </string>
     <string name="gorup_not_found">Can not find this group</string>
     <string name="group_chat">Group chat</string>
     <string name="group_id">Group ID</string>
     <string name="group_is_blocked">Blocking the group..</string>
     <string name="group_name">Group name</string>
     <string name="group_not_existed">The group does not exist</string>
-    <string name="group_of_shielding">Group of shielding failure, please check the network or try again later</string>
+    <string name="group_of_shielding">Group of shielding failure, please check the network or try
+        again later
+    </string>
     <string name="group_search_failed">Search failed</string>
     <string name="hang_up">Hang up</string>
     <string name="hanging_up">Hanging up..</string>
-    <string name="have_connected_with">Connected to the peer and waiting for the peer to accept</string>
+    <string name="have_connected_with">Connected to the peer and waiting for the peer to accept
+    </string>
     <string name="have_you_removed">Have you removed from his buddy list</string>
     <string name="illegal_user_name">Illegal user name</string>
     <string name="input_new_nick_hint">Input a new nick</string>
@@ -285,19 +334,26 @@
     <string name="location_prefix">[my location]</string>
     <string name="location_recv">[%1$s location]</string>
     <string name="login">Login</string>
-    <string name="login_failure_failed">Logon failure: failed to retrieve contacts or groups</string>
+    <string name="login_failure_failed">Logon failure: failed to retrieve contacts or groups
+    </string>
     <string name="logout">Logout</string>
-    <string name="logout_hint">Logout will never clear the chat history, this account can be used on next login</string>
+    <string name="logout_hint">Logout will never clear the chat history, this account can be used on
+        next login
+    </string>
     <string name="move_out_backlist">Remove from blacklist</string>
     <string name="move_up_to_cancel">Finger up to cancel sending</string>
     <string name="mute">Mute</string>
     <string name="network_anomalies">Network is not available, please check the network!</string>
     <string name="network_isnot_available">The network is not available</string>
-    <string name="network_unavailable">The network connection is not available, please check the network</string>
+    <string name="network_unavailable">The network connection is not available, please check the
+        network
+    </string>
     <string name="newchat">Create new group</string>
     <string name="newnotify">Receiving a new message</string>
     <string name="nickname">NickName</string>
-    <string name="nickname_description">Once this nick is set, this nick will be used in push notification (by default this is HuanXin ID ) when the receiver is using the IOS device.</string>
+    <string name="nickname_description">Once this nick is set, this nick will be used in push
+        notification (by default this is HuanXin ID ) when the receiver is using the IOS device.
+    </string>
     <string name="no_more_messages">no more messages</string>
     <string name="not_add_myself">"Can't add myself"</string>
     <string name="not_connect_to_server">Not connect to server, please try again later</string>
@@ -309,8 +365,12 @@
     <string name="password">Password</string>
     <string name="people">people</string>
     <string name="picture">[Picture]</string>
-    <string name="please_check">key validation error!Please on AndroidManifest.xml file check the key set</string>
-    <string name="please_set_the_current">"Please set the current user's nickname \ n to ios offline push not userid but Nick, see comments"</string>
+    <string name="please_check">key validation error!Please on AndroidManifest.xml file check the
+        key set
+    </string>
+    <string name="please_set_the_current">"Please set the current user's nickname \ n to ios offline
+        push not userid but Nick, see comments"
+    </string>
     <string name="prompt">Prompt</string>
     <string name="push_nick">IOS offline push nick</string>
     <string name="receive_the_passthrough">Receive cmd message : action：</string>
@@ -318,10 +378,13 @@
     <string name="recording_video">Record video</string>
     <string name="refreshing_group_list">Refreshing group list</string>
     <string name="register">Register</string>
-    <string name="registration_failed_without_permission">Registration failed, without permission!</string>
+    <string name="registration_failed_without_permission">Registration failed, without permission!
+    </string>
     <string name="relay_call">Relay</string>
     <string name="release_to_cancel">Finger release to cancel sending</string>
-    <string name="remove_group_of">Remove group of shielding failure, please check the network or try again later</string>
+    <string name="remove_group_of">Remove group of shielding failure, please check the network or
+        try again later
+    </string>
     <string name="resend">Resend</string>
     <string name="robot_chat">Robot chat</string>
     <string name="save">Save</string>
@@ -334,7 +397,8 @@
     <string name="searching">searching</string>
     <string name="select_contacts">Select the contact</string>
     <string name="send_fail">Send failed</string>
-    <string name="send_failure_please">Send failure, please test whether the server connection</string>
+    <string name="send_failure_please">Send failure, please test whether the server connection
+    </string>
     <string name="send_successful">Request was sent, waiting for the peer to accept</string>
     <string name="send_the_request_is">The request was sent and waiting for owner approval</string>
     <string name="session">Conversation</string>
@@ -343,11 +407,14 @@
     <string name="setting_nickname">Setting nickname</string>
     <string name="shake">Shake</string>
     <string name="sure_to_empty_this">Clear all messages?</string>
-    <string name="temporary_does_not">Currently the video size greater than 10M is not supported!</string>
+    <string name="temporary_does_not">Currently the video size greater than 10M is not supported!
+    </string>
     <string name="text_ack_msg">Read</string>
     <string name="text_delivered_msg">Delivered</string>
     <string name="the_current_group">The current group has been dismissed</string>
-    <string name="the_current_network">The current network is not available, please check the network Settings</string>
+    <string name="the_current_network">The current network is not available, please check the
+        network Settings
+    </string>
     <string name="title_user_profile">User Profile</string>
     <string name="toast_nick_not_isnull">nick cannot be empty!</string>
     <string name="toast_no_support">No Support!</string>
@@ -366,7 +433,7 @@
     <string name="yangshengqi">Use speaker</string>
     <string name="you_are_group">You have been kicked off from the group</string>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/values/ease_styles.xml -->
-    <eat-comment/>
+    <eat-comment />
     <style name="AnimBottom" parent="@android:style/Animation">
         <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
         <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
@@ -400,7 +467,7 @@
     <style name="Anim_style2" parent="android:Theme.NoTitleBar">
         <item name="android:windowAnimationStyle">@style/AnimFade</item>
     </style>
-    <style name="AppTheme" parent="android:Theme.Light"/>
+    <style name="AppTheme" parent="android:Theme.Light" />
     <style name="HeadScale" parent="android:Theme.Dialog">
         <item name="android:windowAnimationStyle">@style/AnimHead</item>
         <item name="android:windowFrame">@null</item>
@@ -501,5 +568,5 @@
     <style name="horizontal_slide" parent="android:Theme.NoTitleBar">
         <item name="android:windowAnimationStyle">@style/AnimFade2</item>
     </style>
-    <style name="nornal_style" parent="android:Theme.NoTitleBar"/>
+    <style name="nornal_style" parent="android:Theme.NoTitleBar" />
 </resources>

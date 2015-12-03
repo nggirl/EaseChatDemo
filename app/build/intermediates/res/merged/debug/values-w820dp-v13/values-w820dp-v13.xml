@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/values-w820dp/em_dimens.xml -->
-    <eat-comment/>
+    <eat-comment />
     <dimen name="activity_horizontal_margin">64dp</dimen>
 </resources>

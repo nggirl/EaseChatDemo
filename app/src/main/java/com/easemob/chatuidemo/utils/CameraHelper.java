@@ -1,10 +1,10 @@
 /**
  * Copyright (C) 2013-2014 EaseMob Technologies. All rights reserved.
- *
+ * <p/>
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- *     http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -60,15 +60,15 @@ public class CameraHelper implements PreviewCallback {
      * 开启相机拍摄
      */
     public void startCapture() {
-        
+
         try {
             if (mCamera != null) {
-                mCamera.setPreviewCallback(null); 
-                mCamera.stopPreview(); 
-                mCamera.release(); 
-                mCamera = null; 
+                mCamera.setPreviewCallback(null);
+                mCamera.stopPreview();
+                mCamera.release();
+                mCamera = null;
             }
-            
+
             cameraInfo = new CameraInfo();
             if (mCamera == null) {
                 // mCamera = Camera.open();
@@ -130,7 +130,7 @@ public class CameraHelper implements PreviewCallback {
             Log.d(TAG, "camera start preview");
         } catch (Exception e) {
             e.printStackTrace();
-            if (mCamera != null){
+            if (mCamera != null) {
                 mCamera.release();
                 mCamera = null;
             }
@@ -142,12 +142,12 @@ public class CameraHelper implements PreviewCallback {
         if (start_flag == true) {
             // 根据屏幕方向写入及传输数据
             if (isScreenOriatationPortrait()) {
-                if (cameraInfo.orientation == 90 || cameraInfo.orientation == 0 || cameraInfo.orientation == 180){
+                if (cameraInfo.orientation == 90 || cameraInfo.orientation == 0 || cameraInfo.orientation == 180) {
                     YUV420spRotate90(yuv_Rotate90, yuv_frame, mwidth, mheight);
-                    YUV42left2right(yuv_frame,yuv_Rotate90,mheight,mwidth);
-                }else if (cameraInfo.orientation == 270){
-                    YUV420spRotate270(yuv_Rotate90,yuv_frame,  mwidth,mheight);
-                    YUV42left2right(yuv_frame,yuv_Rotate90,mheight,mwidth);
+                    YUV42left2right(yuv_frame, yuv_Rotate90, mheight, mwidth);
+                } else if (cameraInfo.orientation == 270) {
+                    YUV420spRotate270(yuv_Rotate90, yuv_frame, mwidth, mheight);
+                    YUV42left2right(yuv_frame, yuv_Rotate90, mheight, mwidth);
                 }
                 callHelper.processPreviewData(mheight, mwidth, yuv_frame);
             } else {
@@ -180,7 +180,7 @@ public class CameraHelper implements PreviewCallback {
 
     /**
      * 获取是否已开启视频数据传输
-     * 
+     *
      * @return
      */
     public boolean isStarted() {
@@ -189,7 +189,7 @@ public class CameraHelper implements PreviewCallback {
 
     /**
      * 设置是否传输视频数据
-     * 
+     *
      * @param start
      */
     public void setStartFlag(boolean start) {

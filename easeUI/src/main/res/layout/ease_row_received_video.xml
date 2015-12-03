@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:paddingTop="13dp" >
+    android:paddingTop="13dp">
 
     <TextView
         android:id="@+id/timestamp"
@@ -15,7 +15,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_chat_activity" >
+        android:layout_marginTop="@dimen/margin_chat_activity">
 
         <ImageView
             android:id="@+id/iv_userhead"
@@ -44,7 +44,7 @@
             android:layout_below="@+id/tv_userid"
             android:layout_marginLeft="@dimen/margin_chat_activity"
             android:layout_toRightOf="@id/iv_userhead"
-            android:background="@drawable/ease_chatfrom_bg" >
+            android:background="@drawable/ease_chatfrom_bg">
 
             <ImageView
                 android:id="@+id/chatting_content_iv"
@@ -58,7 +58,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/ease_chat_video_mask_to"
                 android:gravity="bottom"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/chatting_size_iv"
@@ -79,13 +79,13 @@
             </LinearLayout>
 
 
-             <ImageView
-                 android:clickable="false"
-                 android:id="@+id/chatting_status_btn"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:layout_centerInParent="true"
-                 android:background="@drawable/ease_video_play_btn_small_nor" />
+            <ImageView
+                android:clickable="false"
+                android:id="@+id/chatting_status_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ease_video_play_btn_small_nor" />
         </RelativeLayout>
     </RelativeLayout>
 

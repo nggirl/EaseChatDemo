@@ -25,14 +25,14 @@ public class CallActivity extends BaseActivity {
     protected Ringtone ringtone;
     protected int outgoing;
     protected EMCallStateChangeListener callStateListener;
-    
-    
+
+
     @Override
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
         audioManager = (AudioManager) this.getSystemService(Context.AUDIO_SERVICE);
     }
-    
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -42,15 +42,15 @@ public class CallActivity extends BaseActivity {
             ringtone.stop();
         audioManager.setMode(AudioManager.MODE_NORMAL);
         audioManager.setMicrophoneMute(false);
-        
-        if(callStateListener != null)
+
+        if (callStateListener != null)
             EMChatManager.getInstance().removeCallStateChangeListener(callStateListener);
-            
+
     }
-    
+
     /**
      * 播放拨号响铃
-     * 
+     *
      * @param sound
      * @param number
      */
@@ -77,7 +77,7 @@ public class CallActivity extends BaseActivity {
             return -1;
         }
     }
-    
+
     // 打开扬声器
     protected void openSpeakerOn() {
         try {
@@ -111,6 +111,7 @@ public class CallActivity extends BaseActivity {
 
     /**
      * 保存通话消息记录
+     *
      * @param type 0：音频，1：视频
      */
     protected void saveCallRecord(int type) {
@@ -133,33 +134,33 @@ public class CallActivity extends BaseActivity {
         String st7 = getResources().getString(R.string.did_not_answer);
         String st8 = getResources().getString(R.string.Has_been_cancelled);
         switch (callingState) {
-        case NORMAL:
-            txtBody = new TextMessageBody(st1 + callDruationText);
-            break;
-        case REFUESD:
-            txtBody = new TextMessageBody(st2);
-            break;
-        case BEREFUESD:
-            txtBody = new TextMessageBody(st3);
-            break;
-        case OFFLINE:
-            txtBody = new TextMessageBody(st4);
-            break;
-        case BUSY:
-            txtBody = new TextMessageBody(st5);
-            break;
-        case NORESPONSE:
-            txtBody = new TextMessageBody(st6);
-            break;
-        case UNANSWERED:
-            txtBody = new TextMessageBody(st7);
-            break;
-        default:
-            txtBody = new TextMessageBody(st8);
-            break;
+            case NORMAL:
+                txtBody = new TextMessageBody(st1 + callDruationText);
+                break;
+            case REFUESD:
+                txtBody = new TextMessageBody(st2);
+                break;
+            case BEREFUESD:
+                txtBody = new TextMessageBody(st3);
+                break;
+            case OFFLINE:
+                txtBody = new TextMessageBody(st4);
+                break;
+            case BUSY:
+                txtBody = new TextMessageBody(st5);
+                break;
+            case NORESPONSE:
+                txtBody = new TextMessageBody(st6);
+                break;
+            case UNANSWERED:
+                txtBody = new TextMessageBody(st7);
+                break;
+            default:
+                txtBody = new TextMessageBody(st8);
+                break;
         }
         // 设置扩展属性
-        if(type == 0)
+        if (type == 0)
             message.setAttribute(Constant.MESSAGE_ATTR_IS_VOICE_CALL, true);
         else
             message.setAttribute(Constant.MESSAGE_ATTR_IS_VIDEO_CALL, true);

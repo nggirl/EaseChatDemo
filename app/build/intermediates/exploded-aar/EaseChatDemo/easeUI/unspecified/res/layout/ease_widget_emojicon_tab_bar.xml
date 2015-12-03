@@ -12,6 +12,5 @@
         android:id="@+id/tab_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
-    </LinearLayout>
+        android:orientation="horizontal"></LinearLayout>
 </HorizontalScrollView><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/layout/ease_widget_emojicon_tab_bar.xml -->

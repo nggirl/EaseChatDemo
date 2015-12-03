@@ -3,14 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#f2f0eb" >
+    android:background="#f2f0eb">
 
     <RelativeLayout
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/height_top_bar"
         android:background="@color/top_bar_normal_bg"
-        android:gravity="center_vertical" >
+        android:gravity="center_vertical">
 
         <include layout="@layout/ease_commom_back_btn" />
 
@@ -48,7 +48,7 @@
             android:layout_alignParentRight="true"
             android:background="@drawable/ease_common_tab_bg"
             android:onClick="toGroupDetails"
-            android:visibility="gone" >
+            android:visibility="gone">
 
             <ImageView
                 android:layout_width="wrap_content"

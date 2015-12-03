@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/common_bg"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/loading_layout"
@@ -11,8 +11,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:gravity="center"
-        android:visibility="visible"
-         >
+        android:visibility="visible">
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -23,7 +22,8 @@
             android:layout_height="wrap_content"
             android:max="100"
             android:layout_centerHorizontal="true" />
-        <TextView 
+
+        <TextView
             android:id="@+id/textView"
             android:layout_below="@id/progressBar"
             android:layout_width="match_parent"
@@ -31,10 +31,10 @@
             android:gravity="center"
             android:text="@string/downwaiting"
             android:textColor="@android:color/black"
-            
+
             />
-        
-        
+
+
     </RelativeLayout>
 
 

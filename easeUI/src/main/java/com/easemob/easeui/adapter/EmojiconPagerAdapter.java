@@ -1,12 +1,12 @@
 package com.easemob.easeui.adapter;
 
-import java.util.List;
-
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
-public class EmojiconPagerAdapter extends PagerAdapter{
+import java.util.List;
+
+public class EmojiconPagerAdapter extends PagerAdapter {
 
     private List<View> views;
 
@@ -35,5 +35,5 @@ public class EmojiconPagerAdapter extends PagerAdapter{
         ((ViewPager) arg0).removeView(views.get(arg1));
 
     }
-    
+
 }
