@@ -1,0 +1,612 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:2:1-378:12
+	package
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:5:5-32
+	android:versionCode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:4:5-29
+		INJECTED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:7:5-9:41
+MERGED from [EaseChatDemo:easeUI:unspecified] /Users/Logan/development/android/as_workspace/EaseChatDemo/app/build/intermediates/exploded-aar/EaseChatDemo/easeUI/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Logan/development/android/as_workspace/EaseChatDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:20:5-43
+	android:targetSdkVersion
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:9:9-38
+		INJECTED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:8:9-34
+		INJECTED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:11:5-66
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:11:22-63
+uses-permission#android.permission.INTERNET
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:12:22-64
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:13:5-71
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:13:22-68
+uses-permission#android.permission.CAMERA
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:14:5-65
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:14:22-62
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:15:5-79
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:15:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:16:5-81
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:16:22-78
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:17:5-84
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:17:22-81
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:18:5-79
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:18:22-76
+uses-permission#android.permission.GET_TASKS
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:19:5-68
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:19:22-65
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:20:5-76
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:20:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:21:5-76
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:21:22-73
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:22:5-68
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:22:22-65
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:23:5-80
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:23:22-77
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:24:5-75
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:24:22-72
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:25:5-81
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:25:22-78
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:26:5-71
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:26:22-68
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:27:5-74
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:27:22-71
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:28:5-74
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:28:22-71
+uses-permission#android.permission.AUTHENTICATE_ACCOUNTS
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:29:5-80
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:29:22-77
+uses-permission#com.android.launcher.permission.READ_SETTINGS
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:30:5-85
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:30:22-82
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:31:5-75
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:31:22-72
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:32:5-73
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:32:22-70
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:34:5-82
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:34:22-79
+permission#com.easemob.chatuidemo.permission.C2D_MESSAGE
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:36:5-37:47
+	android:protectionLevel
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:37:9-44
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:36:17-77
+uses-permission#com.easemob.chatuidemo.permission.C2D_MESSAGE
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:38:5-85
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:38:22-82
+application
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:41:5-376:25
+MERGED from [com.android.support:support-v4:23.0.1] /Users/Logan/development/android/as_workspace/EaseChatDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:45:9-41
+	android:allowBackup
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:43:9-35
+	android:icon
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:44:9-48
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:42:9-39
+activity#com.easemob.chatuidemo.ui.MainActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:46:9-52:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:49:13-49
+	android:launchMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:48:13-44
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:51:13-52
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:50:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:47:13-66
+activity#com.easemob.chatuidemo.ui.SplashActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:55:9-64:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:57:13-49
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:58:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:56:13-68
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:59:13-63:29
+action#android.intent.action.MAIN
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:60:17-69
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:60:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:62:17-77
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:62:27-74
+activity#com.easemob.chatuidemo.ui.LoginActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:67:9-72:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:69:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:71:13-68
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:70:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:68:13-67
+activity#com.easemob.chatuidemo.ui.RegisterActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:75:9-80:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:77:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:79:13-68
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:78:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:76:13-70
+activity#com.easemob.chatuidemo.ui.ChatActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:82:9-88:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:85:13-49
+	android:launchMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:84:13-43
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:87:13-55
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:86:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:83:13-66
+activity#com.easemob.applib.ui.ChatActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:90:9-96:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:93:13-49
+	android:launchMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:92:13-43
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:95:13-55
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:94:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:91:13-62
+activity#com.easemob.chatuidemo.ui.AddContactActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:98:9-103:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:100:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:101:13-55
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:102:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:99:13-72
+activity#com.easemob.chatuidemo.ui.GroupDetailsActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:105:9-109:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:107:13-49
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:108:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:106:13-74
+activity#com.easemob.chatuidemo.ui.GroupsActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:111:9-116:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:113:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:115:13-52
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:114:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:112:13-68
+activity#com.easemob.chatuidemo.ui.ChatRoomActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:118:9-123:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:120:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:122:13-52
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:121:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:119:13-70
+activity#com.easemob.chatuidemo.ui.ChatRoomDetailsActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:125:9-129:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:127:13-49
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:128:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:126:13-77
+activity#com.easemob.chatuidemo.ui.NewGroupActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:132:9-137:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:134:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:136:13-52
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:135:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:133:13-70
+activity#com.easemob.chatuidemo.ui.ExitGroupDialog
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:139:9-143:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:141:13-49
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:142:13-55
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:140:13-69
+activity#com.easemob.chatuidemo.ui.GroupPickContactsActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:145:9-150:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:147:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:149:13-52
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:148:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:146:13-79
+activity#com.easemob.easeui.ui.EaseBaiduMapActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:152:9-156:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:154:13-49
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:155:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:153:13-70
+activity#com.easemob.chatuidemo.ui.NewFriendsMsgActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:159:9-163:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:161:13-49
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:162:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:160:13-75
+activity#com.easemob.chatuidemo.ui.ForwardMessageActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:165:9-170:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:167:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:169:13-52
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:168:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:166:13-76
+activity#com.easemob.chatuidemo.ui.ContextMenuActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:172:9-176:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:174:13-49
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:175:13-49
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:173:13-73
+activity#com.easemob.easeui.ui.EaseShowBigImageActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:178:9-182:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:180:13-49
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:181:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:179:13-74
+activity#com.easemob.easeui.ui.EaseShowNormalFileActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:184:9-188:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:186:13-49
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:187:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:185:13-76
+activity#com.easemob.chatuidemo.ui.BlacklistActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:190:9-194:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:192:13-49
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:193:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:191:13-71
+activity#com.easemob.chatuidemo.ui.PublicGroupsActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:197:9-202:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:199:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:201:13-52
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:200:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:198:13-74
+activity#com.easemob.chatuidemo.ui.PublicChatRoomsActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:204:9-209:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:206:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:208:13-52
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:207:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:205:13-77
+activity#com.easemob.chatuidemo.ui.VoiceCallActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:212:9-217:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:214:13-49
+	android:launchMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:215:13-44
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:216:13-48
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:213:13-71
+activity#com.easemob.chatuidemo.ui.VideoCallActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:219:9-225:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:222:13-49
+	android:launchMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:223:13-44
+	android:configChanges
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:221:13-74
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:224:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:220:13-71
+activity#com.easemob.chatuidemo.ui.GroupSimpleDetailActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:227:9-231:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:229:13-49
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:230:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:228:13-79
+activity#com.easemob.chatuidemo.ui.GroupBlacklistActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:233:9-237:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:235:13-49
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:236:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:234:13-76
+activity#com.easemob.chatuidemo.ui.PublicGroupsSeachActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:238:9-242:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:240:13-49
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:241:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:239:13-79
+activity#com.easemob.chatuidemo.ui.EditActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:243:9-248:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:245:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:247:13-55
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:246:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:244:13-66
+activity#com.easemob.easeui.ui.EaseShowVideoActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:249:9-254:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:251:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:253:13-60
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:252:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:250:13-71
+activity#com.easemob.chatuidemo.ui.ImageGridActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:256:9-261:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:258:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:260:13-60
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:259:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:257:13-71
+activity#com.easemob.chatuidemo.ui.RecorderVideoActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:262:9-267:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:264:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:266:13-60
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:265:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:263:13-75
+activity#com.easemob.chatuidemo.ui.DiagnoseActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:269:9-274:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:271:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:273:13-60
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:272:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:270:13-70
+activity#com.easemob.chatuidemo.ui.OfflinePushNickActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:277:9-282:20
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:279:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:281:13-60
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:280:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:278:13-77
+activity#com.easemob.chatuidemo.ui.RobotsActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:284:9-289:25
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:286:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:288:13-60
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:287:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:285:13-68
+activity#com.easemob.chatuidemo.ui.UserProfileActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:291:3-295:19
+	android:screenOrientation
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:293:7-43
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:294:7-46
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:292:7-67
+receiver#com.easemob.chat.StartServiceReceiver
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:298:9-305:20
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:298:19-71
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.QUICKBOOT_POWERON+android.intent.category.LAUNCHER
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:299:13-304:29
+	android:priority
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:299:28-51
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:300:17-79
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:300:25-76
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:301:17-82
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:301:25-79
+receiver#com.easemob.chat.EMGCMBroadcastReceiver
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:308:9-316:20
+	android:exported
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:310:13-36
+	android:permission
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:311:13-73
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:309:13-67
+intent-filter#com.easemob.chatuidemo+com.google.android.c2dm.intent.RECEIVE
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:312:13-315:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:313:17-81
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:313:25-78
+category#com.easemob.chatuidemo
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:314:17-67
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:314:27-64
+service#com.easemob.chat.EMGCMListenerService
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:318:9-320:19
+	android:exported
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:319:13-37
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:318:18-70
+receiver#com.easemob.chatuidemo.receiver.GCMPushBroadCast
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:322:9-329:20
+	android:exported
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:324:13-37
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:323:13-76
+intent-filter#com.easemob.chatuidemo+com.easemob.sdk.push
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:325:13-328:29
+action#com.easemob.sdk.push
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:326:17-62
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:326:25-60
+service#com.umeng.update.net.DownloadingService
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:331:9-334:13
+	android:process
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:333:8-45
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:332:8-62
+activity#com.umeng.update.UpdateDialogActivity
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:335:3-338:14
+	android:theme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:337:7-66
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:336:7-59
+meta-data#EASEMOB_APPKEY
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:341:9-343:55
+	android:value
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:343:13-52
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:342:13-42
+service#com.easemob.chat.EMChatService
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:345:9-347:15
+	android:exported
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:346:13-36
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:345:18-63
+receiver#com.easemob.chat.EMMonitorReceiver
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:349:9-359:20
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:349:19-68
+intent-filter#android.intent.action.PACKAGE_REMOVED
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:350:13-353:29
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:351:17-79
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:351:25-77
+data
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:352:17-49
+	android:scheme
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:352:23-47
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.USER_PRESENT
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:355:13-358:29
+action#android.intent.action.USER_PRESENT
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:357:17-77
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:357:25-74
+service#com.baidu.location.f
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:362:9-365:41
+	android:enabled
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:364:13-35
+	android:process
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:365:13-38
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:363:13-48
+meta-data#UMENG_APPKEY
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:367:9-370:21
+	android:value
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:369:13-53
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:368:13-40
+meta-data#UMENG_CHANNEL
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:371:9-74
+	android:value
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:371:20-43
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:371:44-72
+meta-data#com.baidu.lbsapi.API_KEY
+ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:372:9-374:64
+	android:value
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:374:13-61
+	android:name
+		ADDED from /Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/AndroidManifest.xml:373:13-52

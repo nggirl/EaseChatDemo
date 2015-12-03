@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ease_btn_blue_pressed_shape" android:state_pressed="true"/>
+    <item android:drawable="@drawable/ease_btn_blue_pressed_shape" android:state_enabled="false"/>
+    <item android:drawable="@drawable/ease_btn_blue_normal_shape"/>
+</selector><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/drawable/ease_btn_blue_selector.xml --><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/build/intermediates/bundles/debug/res/drawable/ease_btn_blue_selector.xml -->

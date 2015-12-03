@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/em_dx_checkbox_on" android:state_checked="true"/>
+    <item android:drawable="@drawable/em_dx_checkbox_off"/>
+
+</selector>	<!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/drawable/em_checkbox_bg_selector.xml -->

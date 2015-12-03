@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/delete_conversation"
+        android:title="@string/delete_conversation"/>
+    
+    <!-- <item
+        android:id="@+id/delete_message"
+        android:title="@string/delete_conversation_messages"/> -->
+    
+</menu><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/menu/em_delete_message.xml -->

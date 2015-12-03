@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 左上角扩大-->
+  <scale   xmlns:android="http://schemas.android.com/apk/res/android"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"  
+        android:fromXScale="0.001"   
+        android:toXScale="1.0"   
+        android:fromYScale="0.001"   
+        android:toYScale="1.0"   
+        android:pivotX="15%"  
+        android:pivotY="25%"  
+        android:duration="200" />  
+   <!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/anim/head_in.xml --><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/build/intermediates/bundles/debug/res/anim/head_in.xml -->

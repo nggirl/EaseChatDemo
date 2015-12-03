@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <corners android:radius="3dp" />
+
+    <solid android:color="#dcdddd" />
+
+</shape><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/src/main/res/drawable/ease_timestampe_bg.xml --><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/easeUI/build/intermediates/bundles/debug/res/drawable/ease_timestampe_bg.xml -->

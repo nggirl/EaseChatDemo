@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <solid android:color="@color/btn_logout_normal" />
+
+    <corners android:radius="2dp" />
+
+</shape><!-- From: file:/Users/Logan/development/android/as_workspace/EaseChatDemo/app/src/main/res/drawable/em_btn_logout_normal_shape.xml -->
